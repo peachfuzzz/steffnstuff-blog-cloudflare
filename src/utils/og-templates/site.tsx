@@ -67,23 +67,21 @@ export default (logoDataUrl?: string) => {
             <p style={{ fontSize: 28 }}>{SITE.desc}</p>
           </div>
 
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              width: "100%",
-              marginBottom: "8px",
-              fontSize: 28,
-            }}
-          >
-            <span style={{ overflow: "hidden", fontWeight: "bold" }}>
-              {new URL(SITE.website).hostname}
-            </span>
+          <div style={{ position: "relative", width: "100%", marginBottom: 8 }}>
+            {/* bottom-right small logo (replaces hostname / site title) */}
             {logoDataUrl && (
-              <img
-                src={logoDataUrl}
-                alt="logo"
-                style={{ width: 140, height: "auto", marginLeft: 12 }}
+              <div
+                style={{
+                  width: 110,
+                  height: 110,
+                  position: "absolute",
+                  right: 8,
+                  bottom: 8,
+                  backgroundImage: `url(${logoDataUrl})`,
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
               />
             )}
           </div>

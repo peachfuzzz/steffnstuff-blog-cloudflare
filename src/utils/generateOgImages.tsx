@@ -38,6 +38,7 @@ try {
   // If reading fails, we simply won't render the logo in the generated image
   logoDataUrl = undefined;
 }
+console.log("generateOgImages: logoDataUrl set?", !!logoDataUrl);
 
 const options: SatoriOptions = {
   width: 1200,
