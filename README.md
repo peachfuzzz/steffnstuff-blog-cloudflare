@@ -43,7 +43,7 @@ Inside of AstroPaper, you'll see the following folders and files:
 │   ├── assets/
 │   │   └── logo.svg
 │   │   └── logo.png
-│   └── peachfuzzz_logo_nobg.png
+│   └── peachfuzzz_peeking_nobg.png
 │   └── astropaper-og.jpg
 │   └── robots.txt
 │   └── toggle-theme.js
