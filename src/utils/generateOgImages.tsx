@@ -3,6 +3,8 @@ import { Resvg } from "@resvg/resvg-js";
 import { type CollectionEntry } from "astro:content";
 import postOgImage from "./og-templates/post";
 import siteOgImage from "./og-templates/site";
+import { readFile } from "fs/promises";
+import path from "path";
 
 const fetchFonts = async () => {
   // Regular Font
@@ -21,6 +23,21 @@ const fetchFonts = async () => {
 };
 
 const { fontRegular, fontBold } = await fetchFonts();
+
+// Load logo from public folder and convert to data URL for satori to render
+let logoDataUrl: string | undefined;
+try {
+  const logoPath = path.join(process.cwd(), "public", "peachfuzzz_peeking_nobg.png");
+  const logoBuffer = await readFile(logoPath);
+  // logoBuffer may be a Uint8Array; toString('base64') works on Buffer
+  const base64 = Buffer.isBuffer(logoBuffer)
+    ? logoBuffer.toString("base64")
+    : Buffer.from(logoBuffer).toString("base64");
+  logoDataUrl = `data:image/png;base64,${base64}`;
+} catch (err) {
+  // If reading fails, we simply won't render the logo in the generated image
+  logoDataUrl = undefined;
+}
 
 const options: SatoriOptions = {
   width: 1200,
@@ -49,11 +66,11 @@ function svgBufferToPngBuffer(svg: string) {
 }
 
 export async function generateOgImageForPost(post: CollectionEntry<"blog">) {
-  const svg = await satori(postOgImage(post), options);
+  const svg = await satori(postOgImage(post, logoDataUrl), options);
   return svgBufferToPngBuffer(svg);
 }
 
 export async function generateOgImageForSite() {
-  const svg = await satori(siteOgImage(), options);
+  const svg = await satori(siteOgImage(logoDataUrl), options);
   return svgBufferToPngBuffer(svg);
 }

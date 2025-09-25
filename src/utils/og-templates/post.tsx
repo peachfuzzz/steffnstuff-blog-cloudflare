@@ -1,7 +1,7 @@
 import { SITE } from "@config";
 import type { CollectionEntry } from "astro:content";
 
-export default (post: CollectionEntry<"blog">) => {
+export default (post: CollectionEntry<"blog">, logoDataUrl?: string) => {
   return (
     <div
       style={{
@@ -88,6 +88,13 @@ export default (post: CollectionEntry<"blog">) => {
             <span style={{ overflow: "hidden", fontWeight: "bold" }}>
               {SITE.title}
             </span>
+            {logoDataUrl && (
+              <img
+                src={logoDataUrl}
+                alt="logo"
+                style={{ width: 120, height: "auto", marginLeft: 8 }}
+              />
+            )}
           </div>
         </div>
       </div>

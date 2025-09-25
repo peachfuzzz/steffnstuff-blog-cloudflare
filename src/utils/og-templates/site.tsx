@@ -1,6 +1,6 @@
 import { SITE } from "@config";
 
-export default () => {
+export default (logoDataUrl?: string) => {
   return (
     <div
       style={{
@@ -79,6 +79,13 @@ export default () => {
             <span style={{ overflow: "hidden", fontWeight: "bold" }}>
               {new URL(SITE.website).hostname}
             </span>
+            {logoDataUrl && (
+              <img
+                src={logoDataUrl}
+                alt="logo"
+                style={{ width: 140, height: "auto", marginLeft: 12 }}
+              />
+            )}
           </div>
         </div>
       </div>
