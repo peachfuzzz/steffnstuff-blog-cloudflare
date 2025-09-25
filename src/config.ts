@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Stephen Wu",
   desc: "A small blog about games and design.",
   title: "Steff 'n Stuff",
-  ogImage: "peachfuzzz_peeking.jpg", // path to your og image
+  ogImage: "/peachfuzzz_peeking_nobg.png", // path to your og image
   lightAndDarkMode: true,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
