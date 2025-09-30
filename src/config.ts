@@ -5,9 +5,7 @@ export const SITE: Site = {
   author: "Stephen Wu",
   desc: "A small blog about games and design.",
   title: "Steff 'n Stuff",
-  // Use the dynamic generated OG so it includes the site logo
-  // The generator is available at /og.png
-  ogImage: "/og.png",
+  ogImage: "/peachfuzzz_peeking.JPG", // path to your og image
   lightAndDarkMode: true,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
