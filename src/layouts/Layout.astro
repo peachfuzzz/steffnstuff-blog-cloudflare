@@ -27,10 +27,15 @@ const {
   scrollSmooth = false,
 } = Astro.props;
 
-const socialImageURL = new URL(
-  ogImage ?? SITE.ogImage ?? "https://dev.steffnstuff.com/peachfuzzz_detailed_nobg.png",
-  Astro.url.origin
-).href;
+// If ogImage is a full URL, use it directly, otherwise construct the full URL
+const socialImageURL = ogImage?.startsWith('http') 
+  ? ogImage 
+  : SITE.ogImage?.startsWith('http')
+    ? SITE.ogImage
+    : new URL(
+        ogImage ?? SITE.ogImage ?? "https://dev.steffnstuff.com/peachfuzzz_detailed_nobg.png",
+        Astro.url.origin
+      ).href;
 ---
 
 <!doctype html>
