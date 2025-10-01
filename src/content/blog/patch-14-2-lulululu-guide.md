@@ -1,6 +1,6 @@
 ---
 title: Patch 14.2 Lulululu Guide
-ogImage: /src/assets/images/hyperpop_lulu.png
+ogImage: /public_images/hyperpop_lulu.png  # Note: path starts from public directory
 author: Peachfuzzz
 pubDatetime: 2024-01-23T15:55:12.000+00:00
 slug: patch-14-2-lulululu-guide
