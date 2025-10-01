@@ -1,6 +1,6 @@
 import { SITE } from "@config";
 import type { CollectionEntry } from "astro:content";
-import Stamp from "./components/Stamp";
+import BlogStamp from "./components/BlogStamp";
 
 export default (post: CollectionEntry<"blog">) => {
   return (
@@ -86,7 +86,7 @@ export default (post: CollectionEntry<"blog">) => {
               </span>
             </span>
 
-            <Stamp />
+            <BlogStamp />
           </div>
         </div>
       </div>
