@@ -22,10 +22,26 @@ const fetchFonts = async () => {
 
 const { fontRegular, fontBold } = await fetchFonts();
 
+// Function to load and convert an image to base64
+async function loadImage(src: string): Promise<string> {
+  const imageResponse = await fetch(src);
+  const arrayBuffer = await imageResponse.arrayBuffer();
+  const base64 = Buffer.from(arrayBuffer).toString('base64');
+  const mimeType = imageResponse.headers.get('content-type') || 'image/png';
+  return `data:${mimeType};base64,${base64}`;
+}
+
 const options: SatoriOptions = {
   width: 1200,
   height: 630,
   embedFont: true,
+  loadAdditionalAsset: async (src: string, _options: { element: any }) => {
+    if (src.startsWith('/')) {
+      // Convert relative path to full URL
+      src = `https://dev.steffnstuff.com${src}`;
+    }
+    return await loadImage(src);
+  },
   fonts: [
     {
       name: "IBM Plex Mono",
