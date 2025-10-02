@@ -13,7 +13,7 @@ export default () => {
       }}
     >
       <img
-        src="https://dev.steffnstuff.com/peachfuzzz_pen.png"
+        src="https://dev.steffnstuff.com/peachfuzzz_pen_nobg.png"
         alt=""
         style={{
           width: "100%",
