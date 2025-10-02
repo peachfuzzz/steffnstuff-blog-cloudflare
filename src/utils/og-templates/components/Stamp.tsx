@@ -19,7 +19,7 @@ export default () => {
         style={{
           objectFit: "contain",
         }}
-        alt="Steff 'n Stuff"
+        alt="if you see this die"
       />
     </div>
   );
