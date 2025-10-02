@@ -4,7 +4,7 @@ export const SITE: Site = {
   website: "https://dev.steffnstuff.com", // replace this with your deployed domain
   author: "Stephen Wu",
   desc: "A small blog about games and design.",
-  title: "Cock 'n Balls",
+  title: "Steff 'n Stuff",
   ogImage: "https://dev.steffnstuff.com/peachfuzzz_peeking.JPG", // path to your og image
   lightAndDarkMode: true,
   postPerPage: 3,
