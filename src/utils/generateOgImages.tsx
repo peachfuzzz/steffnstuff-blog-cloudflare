@@ -1,6 +1,7 @@
 import satori, { type SatoriOptions } from "satori";
 import { Resvg } from "@resvg/resvg-js";
 import { type CollectionEntry } from "astro:content";
+import { SITE } from "@config";
 import postOgImage from "./og-templates/post";
 import siteOgImage from "./og-templates/site";
 
@@ -37,8 +38,9 @@ const options: SatoriOptions = {
   embedFont: true,
   loadAdditionalAsset: async (src: string, _options: { element: any }) => {
     if (src.startsWith('/')) {
-      // Convert relative path to full URL
-      src = `https://dev.steffnstuff.com${src}`;
+      // Use the site URL from config
+      const siteUrl = new URL(SITE.website);
+      src = `${siteUrl.origin}${src}`;
     }
     return await loadImage(src);
   },
