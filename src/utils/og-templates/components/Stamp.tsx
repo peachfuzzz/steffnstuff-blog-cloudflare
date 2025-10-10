@@ -8,18 +8,18 @@ export default () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        width: "100px",
-        height: "100px",
+        width: "200px",
+        height: "200px",
       }}
     >
       <img
-        src="https://dev.steffnstuff.com/peachfuzzz_detailed_nobg.png"
-        width={100}
-        height={100}
+        src="https://dev.steffnstuff.com/peachfuzzz_pen_separate.png"
+        width={200}
+        height={200}
         style={{
           objectFit: "contain",
         }}
-        alt="Steff 'n Stuff"
+        alt="if you see this die"
       />
     </div>
   );
