@@ -4,7 +4,7 @@ ogImage: https://dev.steffnstuff.com/public_images/hyperpop_lulu.png
 author: Peachfuzzz
 pubDatetime: 2024-01-23T15:55:12.000+00:00
 slug: patch-14-2-lulululu-guide
-featured: true
+featured: false
 draft: false
 tags:
   - TFT

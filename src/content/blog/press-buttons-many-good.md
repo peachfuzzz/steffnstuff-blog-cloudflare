@@ -25,7 +25,7 @@ The question of "why strings" is worthy of examination. It's important to note t
 
 The time between actions means “something” can happen that affects the outcome in a way you can’t account for. Maybe the target moves away. Maybe someone will heal them. Maybe your teammate steals the kill. The faster a sequence happens, the less variance enters the equation.
 
-I’d love to wax poetic about variance, but that topic is more fundamental than pressing several buttons together and will require its own essay. For now, take the following definition for granted, and I’ll prove it eventually™. Variance for what we care about in games is the idea that an outcome can deviate from an expectation. Variance isn’t just “rng,” either. We can categorize anything out of our immediate control—enemy clicks, ally decisions, your own mistakes—as the manifestation of variance. Generally, variance is bad: we want things to happen according to expectation because it lets us make decisions on the future, even with imperfect information. As such, much of how to get better at playing games has its roots in controlling and lowering variance.
+> I’d love to wax poetic about variance, but that topic is more fundamental than pressing several buttons together and will require its own essay. For now, take the following definition for granted, and I’ll prove it eventually™. Variance for what we care about in games is the idea that an outcome can deviate from an expectation. Variance isn’t just “rng,” either. We can categorize anything out of our immediate control—enemy clicks, ally decisions, your own mistakes—as the manifestation of variance. Generally, variance is bad: we want things to happen according to expectation because it lets us make decisions on the future, even with imperfect information. As such, much of how to get better at playing games has its roots in controlling and lowering variance.
 
 Strings are a label on the general act of making decisions in a sequence. Just because you construct a string, however, does not mean your construction is the best permutation of its constituent components. An optimal ordering for each situation generally exists. A lot of this is rooted in lowering variance. You want your low investment options earlier to decide whether or not to continue. You want your high-variance options after your variance-reducer options because you don’t want your success to come down to chance. The order in which you arrange the actions in a string and the number and type of actions within a string determine its optimality for a given scenario.
 
@@ -76,11 +76,11 @@ Extenders are a special type of substring action. The purpose of an extender is 
 
 There is no universal solution for constructing the perfect string. When you perform a string, you’re speculating on how much risk you’re willing to take and what cost you’re willing to invest, all for an expected return. In line with this financial metaphor, you can think of your options ranging from “greedy” to “fearful.”
 
-CNN’s Fear and Greed index, from which I borrowed the concept.
+> [CNN’s Fear and Greed index, from which I borrowed the concept.](https://www.cnn.com/markets/fear-and-greed)
 
 Greed is the prioritization of higher value over lower variance. When greedy, you’re throwing caution to the wind and letting the variance in. Greedy strings take longer, commit later, and include more filler. Reminder: more filler in your string means you do more damage\! It also costs more time and risk.
 
-Sometimes, the costs are well worth it—if you hit them with enough Sett autos before your Haymaker, you could kill them with the extra value. Other times, however, the increased variance will cause your string to leave your range or fight back, resulting in a lost payoff or direct punishment.
+Sometimes, the costs are well worth it—if you hit your target with enough Sett autos before your Haymaker, you could kill them with the extra value. Other times, however, the increased variance will cause your string to leave your range or fight back, resulting in a lost payoff or direct punishment.
 
 Fear is the prioritization of lower variance over higher value. When fearful, you want as little variance as possible in outcome. Fearful strings are short and bitter. You take less risk and look for guaranteed results, but it comes at the cost of possible value. The fearful string could 100% guarantee your Sett W on a target, but they might live by a sliver—a sliver that would only have taken an extra auto, had you been willing to greed a little more.
 
