@@ -1,10 +1,10 @@
 ---
 title: League of Legends String Theory
 author: Peachfuzzz
-pubDatetime: 2024-01-23T15:55:12.000+00:00
+pubDatetime: 2025-10-16T15:55:12.000+00:00
 slug: string-theory
 featured: true
-draft: true
+draft: false
 tags:
   - league of legends
   - guide
@@ -106,7 +106,7 @@ Sett gives us a pretty nice kit to illustrate the idea of strings. We can first 
 
 Here are three example strings that Sett generally uses to trade in lane before he hits level 6.
 
-![Sett Trade Flowchart](@assets\images\basic_sett_trade_update.jpg)
+![Sett Trade Flowchart](@assets/images/basic_sett_trade_update.jpg)
 
 As noted above, the greedier Sett’s string, the more Qs he fits in, and later he uses E and W. In theory, the greediest possible string would just be auto-attacking someone to death, but it’s extraordinarily unlikely you’ll meet such a perfect punching bag. Let’s go through the reasoning behind why you might use each string and place ourselves in the Boss’s shoes.
 
