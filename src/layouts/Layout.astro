@@ -20,17 +20,31 @@ const {
   title = SITE.title,
   author = SITE.author,
   description = SITE.desc,
-  ogImage = SITE.ogImage,
+  ogImage,
   canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
   pubDatetime,
   modDatetime,
   scrollSmooth = false,
 } = Astro.props;
 
-const socialImageURL = new URL(
-  ogImage ?? SITE.ogImage ?? "og.png",
-  Astro.url.origin
-).href;
+// Determine OG image URL with proper precedence:
+let socialImageURL;
+if (ogImage?.startsWith('http')) {
+  // Use post-specific full URL
+  socialImageURL = ogImage;
+} else if (SITE.ogImage?.startsWith('http')) {
+  // Use site-wide full URL
+  socialImageURL = SITE.ogImage;
+} else if (ogImage) {
+  // Use post-specific relative path
+  socialImageURL = new URL(ogImage, Astro.url.origin).href;
+} else if (SITE.ogImage) {
+  // Use site-wide relative path
+  socialImageURL = new URL(SITE.ogImage, Astro.url.origin).href;
+} else {
+  // Fall back to dynamic og.png
+  socialImageURL = new URL("og.png", Astro.url.origin).href;
+}
 ---
 
 <!doctype html>
@@ -41,7 +55,7 @@ const socialImageURL = new URL(
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/thick logo.png" />
     <link rel="canonical" href={canonicalURL} />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
     <meta name="generator" content={Astro.generator} />
@@ -57,7 +71,11 @@ const socialImageURL = new URL(
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
+    <meta property="og:type" content="article" />
     <meta property="og:image" content={socialImageURL} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
 
     <!-- Article Published/Modified time -->
     {

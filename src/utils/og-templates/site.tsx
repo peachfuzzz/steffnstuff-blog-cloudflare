@@ -1,4 +1,5 @@
 import { SITE } from "@config";
+import Stamp from "./components/Stamp";
 
 export default () => {
   return (
@@ -65,6 +66,7 @@ export default () => {
           >
             <p style={{ fontSize: 72, fontWeight: "bold" }}>{SITE.title}</p>
             <p style={{ fontSize: 28 }}>{SITE.desc}</p>
+            <Stamp />
           </div>
 
           <div

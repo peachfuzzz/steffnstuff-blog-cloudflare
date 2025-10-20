@@ -11,7 +11,7 @@ import { SITE } from "./src/config";
 // https://astro.build/config
 
 export default defineConfig({
-  site: "https://steffnstuff.com",
+  site: "https://dev.steffnstuff.com",
   integrations: [
     tailwind({
       applyBaseStyles: false,
