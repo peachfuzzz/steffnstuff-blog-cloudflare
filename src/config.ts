@@ -1,11 +1,11 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://dev.steffnstuff.com", // replace this with your deployed domain
+  website: "https://steffnstuff.com", // replace this with your deployed domain
   author: "Stephen Wu",
   desc: "A small blog about games and design.",
   title: "Steff 'n Stuff",
-  ogImage: "https://dev.steffnstuff.com/peachfuzzz_peeking_vibrant_cropped.png", // path to your og image
+  ogImage: "https://steffnstuff.com/peachfuzzz_peeking_vibrant_cropped.png", // path to your og image
   lightAndDarkMode: true,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
