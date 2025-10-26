@@ -5,6 +5,9 @@ import { ViewTransitions } from "astro:transitions";
 
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
+// Check if we're on the dev subdomain to prevent indexing
+const isDevSite = Astro.site?.hostname.startsWith('dev.');
+
 export interface Props {
   title?: string;
   author?: string;
@@ -111,6 +114,11 @@ if (ogImage?.startsWith('http')) {
     />
 
     <meta name="theme-color" content="" />
+
+    {
+      // Prevent indexing on dev subdomain
+      isDevSite && <meta name="robots" content="noindex, nofollow" />
+    }
 
     {
       // If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,

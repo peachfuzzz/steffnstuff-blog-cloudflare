@@ -3,7 +3,7 @@ title: "Manga Recommendations"
 author: Peachfuzzz
 pubDatetime: 2024-07-21T16:30:12.000+00:00
 slug: manga-recommendations
-featured: true
+featured: false
 draft: false
 tags:
   - manga

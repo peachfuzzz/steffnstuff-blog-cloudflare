@@ -12,9 +12,9 @@ tags:
 description: "A discussion on the removal of augment statistics from TFT"
 ---
 
-# Table of Contents
+## Table of Contents
 
-# Introduction: Augment Stats Removal Redux
+## Introduction: Augment Stats Removal Redux
 
 On November 13th, Riot Mortdog announced on his Twitter and posted to r/CompetitiveTFT about the removal of augments from the post-match summary, effectively eliminating augments from statistics aggregator sites. You can find his tweet below.
 
@@ -29,9 +29,9 @@ The broader topic about the usage of statistics in TFT (and games beyond) is a t
 
 However, augment data had a brief leave of absence during the middle of set 9. This was cause for some controversy through its implementation, which we’ll not go into here. The basic incentive of the removal of augment data has remained the same regardless. Riot wants the game to be more fun, and they believe that removing augment stats from the game will create an environment more conducive to the sort of fun they envision from TFT: quick decision making, high variance, and clever innovation. In this essay, I argue that the removal of augment stats is a small and slightly positive change for the overall game health of TFT, in particular surrounding the purpose of statistics and augments in TFT, at the cost of information and transparency.
 
-# Background knowledge and shared assumptions
+## Background knowledge and shared assumptions
 
-## Assumptions
+### Assumptions
 
 Before I begin forcing my opinions upon you, I’ll first outline a few key assumptions that I am making about TFT and Riot surrounding the upcoming changes.
 
@@ -46,7 +46,7 @@ Before I begin forcing my opinions upon you, I’ll first outline a few key assu
 
 If any of these assumptions don’t match up, please understand that I’m trying to give Riot the benefit of the doubt while maintaining some degree of skepticism. I’m a Riot glazer for fun (though it’d be nice to get paid for it), but ultimately I think that a certain level of trust should be levied toward the developers of the game that we are putting our time and effort into. Sometimes Riot makes some heavy mistakes that are worthy of criticism, but on balance (hehe), they’re doing alright. The video game Teamfight Tactics is pretty fun.
 
-## What do augments do for the game?
+### What do augments do for the game?
 
 Augments as a mechanic provide a few things. They introduce high game-to-game variance, force a committed decision at significant points in the game to create an interesting narrative, and incentivize another layer of theorycrafting beyond team compositions and itemization.
 
@@ -56,7 +56,7 @@ This difference in design is reflected in the level of variance for items vs. au
 
 Really, I just did a bunch of vague gesturing all to say that augments are not intended to be optimized in the same way that items and compositions are. Augments are not as replicable, not as universal, but still very much intentional. They are fun and interesting precisely because they create variance. This is foundational to why they became an evergreen addition to TFT. Riot’s approach toward augments is unlikely to change, given how important they are to creating unique game states. It is not a bad thing to want to optimize augments, but it is also not optimizable in quite the same way as other aspects of the game.
 
-## What do stats do for the game?
+### What do stats do for the game?
 
 The purpose of statistics in TFT is to provide evidence for gameplay hypotheses. Stats are, by nature, a collection of correlations rather than a manual of causations. If we theoretically knew that Dominator Crest had an AVP of 4.8, what does that say about the strength of the augment? In my opinion, it’s an indicator that something is vaguely weak with the Dominator lines, but it tells us little about exactly what. Here’s a facetious list of potential issues we could think of that influence the AVP:
 
@@ -76,7 +76,7 @@ Another issue with statistics is how they are (generally) ignorant of current ga
 
 There is, however, one caveat. **Stats with filtering can account for many of these shortcomings**, and this creates a problem. Once you start filtering stats, particularly augments, for stage, composition, and unit, you begin to approach a true evaluation of an augment’s power level. This does pose a problem for the game, which we’ll explore next.
 
-# Why is the removal of augment stats notable?
+## Why is the removal of augment stats notable?
 
 We’ve talked about the purpose of augments, and the purpose of stats. Together, we can derive a key realization about augment stats: **in a game of high complexity, augment stats provide what is closest to a definitive answer in a high variance situation.** The problem isn’t necessarily that augment stats provide information to confirm theories, the problem is that augment stats are an unfun be-all end-all answer to a situation which isn’t designed for replicability.
 
@@ -104,23 +104,23 @@ Conversely, let’s put ourselves in a similar situation common to when augment 
 
 Now, this would be well and good if people overall liked consulting a statistical tool to play their video games. However, I think we can admit that this is not a particularly fun test of skill or knowledge. All competitive games make some promise of skill to the player. **Teamfight Tactics, for one, promises a game where the skills of on-the-fly decision making and knowledge collection are tested.** It does not promise a game where correctly using statistical tools during the game is a part of these tests. Again, I’m not saying that augment stats were ever the optimal way of playing. However, in the eyes of the player base, stats were at least a viable option, so many people felt it valuable to consider and learn, despite it’s obvious externality to the game client. Whether players liked or disliked the usage of augment stats, Riot must have deemed in worthy of attention in pursuit of making the TFT experience more closely align with their vision. If they felt like player sentiment was negative about the health of augment statistics in gameplay and discussions, then as the developer, they made the choice to remove an unfun optimization that made TFT—as a game, as a product, as a community—less fun.
 
-# Addendum: TFT’s quirks
+## Addendum: TFT’s quirks
 
 TFT has a few unique aspects to it which makes it extra volatile to player perception: the unit drafting pool and the (ironically) low variance in game states.
 
-### Every game contains everything
+#### Every game contains everything
 
 Mostly. There are, of course, decently impactful game-to-game differences: augment tier, encounters, and loot orb quality, but in general, you interact with the same individual units and systems. As a result, if something is generically strong, you can plan to encounter it in the vast majority of your games. Many other games do not have this quirk. If a single character is strong in a fighting game, you might encounter them at a frequency higher than the mean, but there will still be numerous games where you simply don’t see the broken stuff. If a champion is strong in League, bans can give players the agency to remove them from each individual game. In TFT, there is no such mechanism. If a strategy is strong, widely known, and isn’t locked behind a stringent set of conditions, then you can safely expect to see it in every game, or even multiple times a game. Small optimizations quickly become ubiquitous.
 
 By the way, this is why TFT hotfixes so much in comparison to every competitive game ever. A single overwhelming comp can infect the game incredibly quickly once discovered and publicized. A bad meta causes fatigue and churn very quickly because its presence is in every single game. When these stale metas form, the game becomes extremely one-note, since these broken strategies are often quite forceable and consistent. Genuine poor quality metas demand change—otherwise players might experience the exact same unbalanced lobby dynamics for two weeks straight.
 
-### Drafting Pool
+#### Drafting Pool
 
 The core of TFT is around its drafting pool: players all see shops that pull from the same pool of units, so any time specific units become more popular, they also becomes a significant (and perhaps measurable) degree weaker. Don’t quote me on this—this essay is already long enough so I didn’t want to further extend it—but there’s an estimate floating around somewhere that being contested at least one way adds +1.0 to your AVP, which is a very meaningful hit to consistency. Powerful stuff is likely to be contested, and so naturally causes the players who pilot the strategy to experience higher variance. The “every game contains everything” is a feels-bad for everyone not playing the meta strategies. The drafting pool is a feels-bad for the three contesters remaining.
 
 The combination of these two traits listed above means that **the perception of power in TFT has comparatively more influence on actual play** than most other games. You will see the powerful stuff more frequently, information about them will spread faster, and they will lead to higher variance game states. Balancing TFT is simply extra difficult. The systems are so sensitive to each other that any slight disturbance will be magnified extremely quickly by the game’s mechanics, not even considering the conversations and content around the game. This is why controlling the perception of power in TFT is of great concern to Riot. They can’t control the entire propagation of information around TFT, but given the opportunity, it is reasonable to assume that they would like to manage the game’s image when possible. In a sense, taking away empirical proof of strength (through augment data) protects the player from overindexing into specific beliefs that have a measurable and frequently negative impact on their own experience.
 
-# Conclusions, including my own
+## Conclusions, including my own
 
 This topic is difficult. I just spent a while justifying why the removal of augment stats made sense from a developer perspective, but I’ve also spent three months thinking about whether or not I actually agree with the change.
 
