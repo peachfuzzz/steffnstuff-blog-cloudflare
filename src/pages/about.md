@@ -3,7 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-## Who am I? I am the dev branch.
+## Who am I? 
 
 Heya, I’m Stephen. You can call me Stephen (Curry, not Hawking), or Steph, or Peachfuzzz, or the other litany of names I have lying around. I have tried on (though perhaps never worn for long) as many hats as I have online aliases. I hail from medicine, I study business, I practice data science, I strive towards game design, and I write.
 
