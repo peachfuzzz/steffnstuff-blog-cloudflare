@@ -3,8 +3,8 @@ title: "A Fight on Three Fronts"
 author: Peachfuzzz
 pubDatetime: 2026-02-09T23:35:41.000+00:00
 slug: a-fight-on-three-fronts
-featured: true
-draft: false
+featured: false
+draft: true
 tags:
   - league of legends
   - educational
@@ -16,7 +16,7 @@ description: "Breaking down a trade, a duel, and a teamfight in League"
 
 ## Introduction
 
-In every game of League of Legends, you will come to blows over your opponents. You both want to break the other team’s nexus, and if someone is in your way, what better options do you have than to forcibly remove them? Unfortunately, fighting is a little more complicated than a polite request. Your opponent probably doesn’t want to leave, and would rather you return to base first. Besides their unwelcome input, combat can bring with it a more personal set of obstacles. The strong emotions linked with fighting, as well as the intense focus and execution, can often interfere with learning and applying any knowledge you take into combat. For many players, improving at fighting comes with strong frustration. “Why can’t my hands just do what I want them to?”
+In every game of League of Legends, you will come to blows with your opponents. You both want to break the other team’s nexus, and if someone is in your way, what better options do you have than to forcibly remove them? Unfortunately, fighting is a little more complicated than a polite request. Your opponent probably doesn’t want to leave, and would rather you return to base first. Besides their unwelcome input, combat can bring with it a more personal set of obstacles. The strong emotions linked with fighting, as well as the intense focus and execution, can often interfere with learning and applying any knowledge you take into combat. For many players, improving at fighting comes with strong frustration. “Why can’t my hands just do what I want them to?”
 
 Fights happen in many situations at many scales, but they all share common skill tests regardless of the participants or goals. Even if fights operate on a more instinctual level than strategy and tactics, much can be learned by watching a fight play out. In this piece, we will observe a few fights with a magnifying glass to watch what happens during a fight.
 
@@ -148,7 +148,7 @@ At this point, even though Nunu is completely removed from the fight, blue team 
 
 ![teamfight screenshot 6](https://images.steffnstuff.com/a-fight-on-three-fronts/image19.png)
 
-Teamfights contained multitudes. In the torrent of information present in a teamfight, parsing it effectively is a problem posed to all. When inevitably confronted with these situations, it is not just important, but necessary, to simplify the given information into useful decision points. Getting overwhelmed and dying to factors outside of your mental stack happens frequently to everyone, and the best way to avoid it is to decrease the load of ideas to think about.
+Teamfights contain multitudes. In the torrent of information present in a teamfight, parsing it effectively is a problem posed to all. When inevitably confronted with these situations, it is not just important, but necessary, to simplify the given information into useful decision points. Getting overwhelmed and dying to factors outside of your mental stack happens frequently to everyone, and the best way to avoid it is to decrease the load of ideas to think about.
 
 ## Conclusion
 
