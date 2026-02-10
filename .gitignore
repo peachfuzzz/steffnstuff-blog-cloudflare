@@ -4,3 +4,4 @@ dist
 .vscode
 .astro
 scripts
+src/content/.DS_Store
