@@ -3,8 +3,8 @@ title: "A Fight on Three Fronts"
 author: Peachfuzzz
 pubDatetime: 2026-02-09T23:35:41.000+00:00
 slug: a-fight-on-three-fronts
-featured: false
-draft: true
+featured: true
+draft: false
 tags:
   - league of legends
   - educational
