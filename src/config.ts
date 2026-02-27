@@ -7,7 +7,7 @@ export const SITE: Site = {
   title: "Steff 'n Stuff",
   ogImage: "https://steffnstuff.com/peachfuzzz_peeking_vibrant_cropped.png", // path to your og image
   lightAndDarkMode: true,
-  postPerPage: 3,
+  postPerPage: 5,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 

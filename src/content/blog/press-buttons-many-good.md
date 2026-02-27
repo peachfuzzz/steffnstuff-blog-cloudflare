@@ -3,7 +3,7 @@ title: League of Legends String Theory
 author: Peachfuzzz
 pubDatetime: 2025-10-16T15:55:12.000+00:00
 slug: string-theory
-featured: true
+featured: false
 draft: false
 tags:
   - league of legends

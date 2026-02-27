@@ -3,7 +3,7 @@ title: "Shallow Dip: TFT BIS QOL"
 author: Peachfuzzz
 pubDatetime: 2024-07-23T15:06:12.000+00:00
 slug: shallow-dip-tft-bis-qol
-featured: true
+featured: false
 draft: false
 tags:
   - TFT
