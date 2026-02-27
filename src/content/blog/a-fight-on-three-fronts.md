@@ -68,7 +68,7 @@ At some point, you will have an encounter where you and your opponent do agree t
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/9TPA1uBiUDs" frameborder="0" allowfullscreen></iframe></div>
 
-The two laners have different win conditions for a fight. Garen has distinct uptime and downtime. His abilities have high instant value but long cooldowns, so he wants to limit interaction once his abilities are used. Volibear is strong in very extended fights, with his W, Frenzied Maul, giving him a large burst of HP and damage if used consecutively on the same target, so he wants to stay on his target for as long as possible. Neither player has summoner spells, so all results are final. These conditions heavily inform each player’s intention during the fight.
+The two laners have different win conditions for a fight. Garen has distinct uptime and downtime. His abilities have high instant value but long cooldowns, so he wants to limit interaction once his abilities are used. Volibear is strong in very extended fights, with his W, Frenzied Maul, giving him a large burst of HP and damage if used consecutively on the same target, so he wants to stay on his target for as long as possible. Neither player has summoner spells, so all results are final. These conditions heavily inform each player’s intentions during the fight.
 
 The sequence begins with a whole lot of nothing as both Garen and Volibear uncomfortably hit minions near each other. Both players are wary that the other is very willing to take a fight, but want the other to initiate it first. Garen waits for his W to come off cooldown, since its brief tenacity and damage reduction is useful against the stun on Voli’s Q, Thundering Smash.
 
@@ -80,25 +80,21 @@ As Garen’s last melee minion walks toward the Volibear’s wave, it creates a 
 
 Voli disengages, running towards his own tower as Garen E ends. Garen also backs off slightly, now that his cooldowns are spent. He doesn’t think his R can kill the Volibear immediately, and he can get another chance at his head later.
 
-Voli, however, notices that Garen is still marked by his Frenzied Maul as a target, and begins to reconsider. If Voli can get off another W, he heals a significant amount (pulling him even further away from the kill range of Garen R) and dealing high damage to Garen. Voli W is also a lower cooldown than Garen’s tools. Maybe he can look for it?
-
-And so he turns.  
+Voli, however, notices that Garen is still marked by his Frenzied Maul as a target, and begins to reconsider. If Voli can get off another W, he heals a significant amount (pulling him even further away from the kill range of Garen R) and dealing high damage to Garen. Voli W is also a lower cooldown than Garen’s tools. As such, he turns around to look for a second bite.  
 
 ![duel screenshot 3](https://images.steffnstuff.com/a-fight-on-three-fronts/image10.png)
 
-Garen recognizes the situation as well. His lead over Volibear, while not insubstantial, doesn’t necessarily mean all situations are winning for him. All of Garen’s basic abilities are on cooldown. If he chose to continue the fight now and gave Voli another chance at dining on him with Frenzied Maul, their healthbars could very easily switch places before Garen’s damaging abilities are fully back up. There’s a decent chance that Voli wins the duel, and he thinks Volibear sees it too.
+Garen recognizes the situation as well. His lead over Volibear, while not insubstantial, doesn’t necessarily mean all situations are winning for him. All of Garen’s basic abilities are on cooldown. If he chose to continue the fight now and gave Voli another chance with Frenzied Maul, their healthbars could very easily switch places before Garen’s damaging abilities are fully back up. There’s a decent chance that Voli wins the duel, and he thinks Volibear sees it too.
 
-But Garen’s abilities *are* up soon, and if he gets them off, he can bring the bear into his ultimate’s kill range. He just needs to keep Voli interested for long enough while waiting for his abilities to come off cooldown.
-
-And so he turns.  
+But Garen’s abilities *are* up soon, and if he gets them off, he can bring Voli into his ultimate’s kill range. He just needs to keep Voli interested for long enough while waiting for his abilities to come off cooldown. As such, he also turns, just briefly, to tempt the Voli into chasing further.
 
 ![duel screenshot 4](https://images.steffnstuff.com/a-fight-on-three-fronts/image12.png)
 
-Now Voli’s fully entranced, and both of them know it. His W mark lasts for quite a few seconds, and he’s so close to getting it off and maybe winning the duel (or at least regaining some HP), and he’s slightly faster than Garen due to his boots, so why not commit all the way?
+Voli’s fully committed at this point. His W mark lasts for quite a few seconds, and he’s very close to getting it off and maybe winning the duel (or at least regaining some HP), and he’s slightly faster than Garen due to his boots, so it's natural for him to continue walking forward.
 
 ![duel screenshot 5](https://images.steffnstuff.com/a-fight-on-three-fronts/image2.png)
 
-Voli takes a bite out of Garen. As promised to both, the HP bars momentarily reverse direction: Voli shoots up while Garen drops. However, this bite proves more than he can chew. Voli is far from the safety of his tower and Garen’s tools are nearly back. The movement speed from his Q isn’t quite available yet, while Garen is more than ready to turn the fight. Voli begins to back off, but Garen tails him in hot pursuit. One Q \-\> E \-\> R later, and Garen smites the bear down.
+Voli takes a bite out of Garen. As promised, the HP bars momentarily reverse direction: Voli shoots up while Garen drops. However, this bite proves more than he can chew. Voli is far from the safety of his tower and Garen’s tools are nearly back. The movement speed from his Q isn’t quite available yet, while Garen is more than ready to turn the fight. Voli begins to back off, but Garen tails him in hot pursuit. One Q \-\> E \-\> R later, and Garen smites him down.
 
 ![duel screenshot 6](https://images.steffnstuff.com/a-fight-on-three-fronts/image16.png)
 
