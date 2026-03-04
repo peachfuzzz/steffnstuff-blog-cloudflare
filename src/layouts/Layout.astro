@@ -61,6 +61,11 @@ if (ogImage?.startsWith('http')) {
     <link rel="icon" type="image/svg+xml" href="/thick logo.png" />
     <link rel="canonical" href={canonicalURL} />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
+    <style is:global>
+      .katex, .katex * { color: rgb(var(--color-text-base)) !important; }
+      .katex svg, .katex svg * { fill: rgb(var(--color-text-base)) !important; stroke: rgb(var(--color-text-base)) !important; }
+      .katex-display { overflow-x: auto; overflow-y: hidden; }
+    </style>
     <meta name="generator" content={Astro.generator} />
 
     <!-- General Meta Tags -->
