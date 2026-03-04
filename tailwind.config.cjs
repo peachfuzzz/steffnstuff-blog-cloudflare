@@ -67,6 +67,9 @@ module.exports = {
             code: {
               color: false,
             },
+            figcaption: {
+              textAlign: 'center',
+            },
           },
         },
       },

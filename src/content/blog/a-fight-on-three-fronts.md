@@ -34,8 +34,7 @@ Lux recognizes she can’t fight back effectively since her E, the main damaging
 
 However, before Lux commits to moving back towards the wave, she guesses that Syndra might try to tag her with a Q during her walk back towards the minions. Lux preemptively dodges just in case, and her caution is rewarded with a dodged Syndra Q. The backstep takes enough time for Lux to lose a melee minion for it.
 
-![trade screenshot 2](https://images.steffnstuff.com/a-fight-on-three-fronts/image14.png)  
-> Notice the mouse click before the Syndra Q animation even begins.
+![trade screenshot 2](https://images.steffnstuff.com/a-fight-on-three-fronts/image14.png "Notice the mouse click before the Syndra Q animation even begins.")  
 
 With Syndra’s cooldowns now burned, she backs off completely. She leaves Lux’s E range before it comes back up and stands behind her minions to avoid getting tagged by Lux’s Q, Light Binding.
 
@@ -53,8 +52,7 @@ Syndra attempts to punish the Lux’s E cooldown anyways by looking for another 
 
 Lux recognizes that Syndra is looking to trade very aggressively past her wave, while Lux's minions are nearly in range. She walks forward very slightly to increase the odds of landing her Light Binding and roots the Syndra while barely avoiding the Syndra W.
 
-![trade screenshot 6](https://images.steffnstuff.com/a-fight-on-three-fronts/image13.png)
-> If Lux stepped backwards here, she would have been hit\!
+![trade screenshot 6](https://images.steffnstuff.com/a-fight-on-three-fronts/image13.png "If Lux stepped backwards here, she would have been hit!")
 
 Lux goes on the offensive. She walks forward with the support of her minions and does as much damage as she can with her attacks and E. Syndra trades back briefly with a Q of her own and a couple basic attacks as she leaves. Both sides disengage once all ability cooldowns are burned and the minion waves fully collide, and the fighting ends.
 
@@ -105,7 +103,6 @@ You and your opponent are not so different in every fight. Both of you want the 
 Eventually, you’ll hit a stage in the game where fights cannot be contained to only you and your lane opponent. Past around 14 minutes, fights become teamfights as upwards of all 10 players in the game convene to practice Big Stick Diplomacy. As the number of players in a fight increases, however, so do the variables at hand. In full-blown teamfights, the amount of information to collect and process grows far beyond the capability of humans. In situations like these, what do you watch?
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/LVrdIk8libA" frameborder="0" allowfullscreen></iframe></div>
-> i apologize in advance for the low quality footage, this was the best example i could find
 
 This teamfight begins around Elder Dragon. Despite the fact that the red side has Cloud Soul, the game is in a pretty even state. Red team is a two-threat composition, with only Yone and Ashe able to contribute significant damage. The blue side has high target access, which poses a problem for the red team. Despite the fact that Ashe is notably strong in this game, she is under extreme threat from the dive potential of Wukong, Zed, and Nautilus, making it difficult for her to live long enough to contribute damage. In previous teamfight (not shown), several blue team flashes were blown to kill Ashe, resulting in a won teamfight for blue. 
 
@@ -115,8 +112,7 @@ Ashe begins the fight awkwardly postured in the jungle as Elder is started off b
 
 Nautilus shows his face in the river and his body language indicates that he is interested in courting Ashe. However, neither his team nor himself are close enough for a guaranteed snap engage on Ashe, especially if she steps into the banana bush above her and out of blue team’s vision. Ashe, knowing that a Nautilus engage right now would put his team in a bad position, holds her ground and pressures the Nautilus to choose as both teams converge.
 
-![teamfight screenshot 1](https://images.steffnstuff.com/a-fight-on-three-fronts/image3.png)  
-> Ashe is in Naut’s hook and ultimate range here, but engaging on Ashe would require ignoring the Yone, who has the damage to duel and kill anyone.
+![teamfight screenshot 1](https://images.steffnstuff.com/a-fight-on-three-fronts/image3.png "Ashe is in Naut’s hook and ultimate range here, but engaging on Ashe would require ignoring the Yone, who has the damage to duel and kill anyone.")  
 
 Nautilus does not seem to come to the same conclusion. Instead, he moves even deeper into the river as the red team closes in to stop him from walking further. Red team begins hitting the Naut, including Ashe, who tanks it for a few seconds. He manages to press his R, Depth Charge, on Ashe, putting her in danger of blue team follow-up. Depth Charge’s knock-up and stun are guaranteed to hit Ashe eventually, so instead of continuing to deal damage to Nautilus, she opts to let her team handle it and run as far away from the enemy divers as possible. When the CC finally does connect, Ashe is too far from any action for the blue team to kill her. One key threat down.
 
@@ -136,9 +132,7 @@ K’Sante, caught in the middle of the enemy team, ults Wukong to get back towar
 
 With Wukong’s first Ult charge down, Rell in the way dragging the blue team towards herself, and the attention focused on the K’Sante, Ashe finally gets a window to begin attacking. She kites back just a moment longer to ensure Wukong can’t run to her (he briefly dips into the bush and out of vision), then fully commits to hitting the closest target.
 
-![teamfight screenshot 5](https://images.steffnstuff.com/a-fight-on-three-fronts/image8.png)  
-
-> K’Sante also tags Draven with his W and Q. He contributes a ton of value throughout the entire fight.
+![teamfight screenshot 5](https://images.steffnstuff.com/a-fight-on-three-fronts/image8.png "K’Sante also tags Draven with his W and Q. He contributes a ton of value throughout the entire fight.")  
 
 At this point, even though Nunu is completely removed from the fight, blue team has no remaining ways to finish off Ashe while their damage dealers are mostly incapacitated. All Ashe needs to do now is not die to a random Draven axe, and she does so unimpressively. K’Sante and her clean up the remainder of the fight without further hassle.  
 
