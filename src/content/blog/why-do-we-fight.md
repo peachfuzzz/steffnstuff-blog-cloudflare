@@ -1,5 +1,5 @@
 ---
-title: "Why do we fight?"
+title: "Why Do We Fight?"
 author: Peachfuzzz
 pubDatetime: 2026-03-23T16:05:12.000+00:00
 slug: why-do-we-fight
