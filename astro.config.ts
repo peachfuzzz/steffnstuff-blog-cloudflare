@@ -6,8 +6,49 @@ import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-import { visit } from 'unist-util-visit';
+import rehypeRaw from 'rehype-raw';
+import { visit, SKIP } from 'unist-util-visit';
 import { SITE } from "./src/config";
+
+function rehypeAnnotations() {
+  return (tree: any) => {
+    let counter = 0;
+    visit(tree, 'element', (node: any, index: any, parent: any) => {
+      if (node.tagName !== 'ann' || index === null || !parent) return;
+      counter++;
+      const num = String(counter);
+      parent.children[index] = {
+        type: 'element',
+        tagName: 'span',
+        properties: { className: ['annotation'] },
+        children: [
+          {
+            type: 'element',
+            tagName: 'button',
+            properties: {
+              className: ['annotation-ref'],
+              dataAnnotation: num,
+              ariaLabel: `Annotation ${num}`,
+              type: 'button',
+            },
+            children: [{ type: 'text', value: num }],
+          },
+          {
+            type: 'element',
+            tagName: 'span',
+            properties: {
+              className: ['annotation-content'],
+              id: `ann-${num}`,
+              role: 'tooltip',
+            },
+            children: node.children,
+          },
+        ],
+      };
+      return SKIP;
+    });
+  };
+}
 
 function rehypeImageCaptions() {
   return (tree: any) => {
@@ -58,6 +99,8 @@ export default defineConfig({
     ],
     rehypePlugins: [
       rehypeKatex,
+      rehypeRaw,
+      rehypeAnnotations,
       rehypeImageCaptions
     ],
     shikiConfig: {

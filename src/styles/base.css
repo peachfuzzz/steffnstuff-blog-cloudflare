@@ -90,6 +90,64 @@
     @apply hidden;
   }
 
+  /* ===== annotations ===== */
+  .annotation {
+    position: relative;
+  }
+  .annotation-ref {
+    cursor: pointer;
+    font-size: 0.75em;
+    vertical-align: super;
+    line-height: 0;
+    color: rgba(var(--color-accent), 1);
+    background: none;
+    border: none;
+    padding: 0 0.125em;
+    font-weight: 600;
+    font-family: inherit;
+  }
+  .annotation-ref:hover {
+    text-decoration: underline;
+  }
+  .annotation-content {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: min(300px, 90vw);
+    padding: 0.625rem 0.875rem;
+    background: rgba(var(--color-fill), 1);
+    border: 1px solid rgba(var(--color-border), 0.4);
+    border-radius: 0.375rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    font-style: normal;
+    color: rgba(var(--color-text-base), 0.85);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+  }
+  .annotation-content.active {
+    display: block;
+  }
+  .annotation-content::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: rgba(var(--color-border), 0.4);
+  }
+  .annotation-content a {
+    color: rgba(var(--color-accent), 1);
+    text-decoration: underline;
+  }
+  .annotation-content a:hover {
+    opacity: 0.8;
+  }
+
   /* ===== scrollbar ===== */
   html {
     overflow-y: scroll;

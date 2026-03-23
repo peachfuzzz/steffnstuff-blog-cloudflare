@@ -3,7 +3,7 @@ title: "Summoner's Rift, Afar and Up Close"
 author: Peachfuzzz
 pubDatetime: 2026-02-26T15:07:12.000+00:00
 slug: summoners-rift-afar-and-up-close
-featured: true
+featured: false
 draft: false
 tags:
   - league of legends

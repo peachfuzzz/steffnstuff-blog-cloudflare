@@ -209,6 +209,52 @@ const layoutProps = {
   }
   attachCopyButtons();
 
+  /** Sets up annotation popups —
+   *  click to toggle, click outside or Escape to close */
+  function setupAnnotations() {
+    document.querySelectorAll('.annotation-ref').forEach(function(ref) {
+      ref.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var num = ref.getAttribute('data-annotation');
+        var content = document.getElementById('ann-' + num);
+        var wasActive = content.classList.contains('active');
+
+        // Close all open annotations
+        document.querySelectorAll('.annotation-content.active').forEach(function(el) {
+          el.classList.remove('active');
+        });
+
+        if (!wasActive) {
+          content.classList.add('active');
+        }
+      });
+    });
+
+    // Close on click outside
+    document.addEventListener('click', function() {
+      document.querySelectorAll('.annotation-content.active').forEach(function(el) {
+        el.classList.remove('active');
+      });
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.annotation-content.active').forEach(function(el) {
+          el.classList.remove('active');
+        });
+      }
+    });
+
+    // Prevent closing when clicking inside annotation content
+    document.querySelectorAll('.annotation-content').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.stopPropagation();
+      });
+    });
+  }
+  setupAnnotations();
+
   /** Scrolls the document to the top when
    * the "Back to Top" button is clicked. */
   function backToTop() {
