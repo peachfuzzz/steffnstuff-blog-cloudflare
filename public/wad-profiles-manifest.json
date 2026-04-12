@@ -1,0 +1,1730 @@
+[
+  {
+    "id": "Aatrox_top",
+    "champion": "Aatrox",
+    "role": "Top",
+    "display": "Aatrox — Top",
+    "file": "Aatrox_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Ahri_mid",
+    "champion": "Ahri",
+    "role": "Mid",
+    "display": "Ahri — Mid",
+    "file": "Ahri_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Akali_mid",
+    "champion": "Akali",
+    "role": "Mid",
+    "display": "Akali — Mid",
+    "file": "Akali_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Akali_top",
+    "champion": "Akali",
+    "role": "Top",
+    "display": "Akali — Top",
+    "file": "Akali_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Akshan_mid",
+    "champion": "Akshan",
+    "role": "Mid",
+    "display": "Akshan — Mid",
+    "file": "Akshan_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Alistar_support",
+    "champion": "Alistar",
+    "role": "Support",
+    "display": "Alistar — Support",
+    "file": "Alistar_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Ambessa_jungle",
+    "champion": "Ambessa",
+    "role": "Jungle",
+    "display": "Ambessa — Jungle",
+    "file": "Ambessa_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Ambessa_top",
+    "champion": "Ambessa",
+    "role": "Top",
+    "display": "Ambessa — Top",
+    "file": "Ambessa_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Amumu_jungle",
+    "champion": "Amumu",
+    "role": "Jungle",
+    "display": "Amumu — Jungle",
+    "file": "Amumu_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Anivia_mid",
+    "champion": "Anivia",
+    "role": "Mid",
+    "display": "Anivia — Mid",
+    "file": "Anivia_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Annie_mid",
+    "champion": "Annie",
+    "role": "Mid",
+    "display": "Annie — Mid",
+    "file": "Annie_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Aphelios_bot",
+    "champion": "Aphelios",
+    "role": "Bot",
+    "display": "Aphelios — Bot",
+    "file": "Aphelios_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Ashe_bot",
+    "champion": "Ashe",
+    "role": "Bot",
+    "display": "Ashe — Bot",
+    "file": "Ashe_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Ashe_support",
+    "champion": "Ashe",
+    "role": "Support",
+    "display": "Ashe — Support",
+    "file": "Ashe_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Aurelion_Sol_mid",
+    "champion": "Aurelion Sol",
+    "role": "Mid",
+    "display": "Aurelion Sol — Mid",
+    "file": "Aurelion_Sol_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Aurora_mid",
+    "champion": "Aurora",
+    "role": "Mid",
+    "display": "Aurora — Mid",
+    "file": "Aurora_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Azir_mid",
+    "champion": "Azir",
+    "role": "Mid",
+    "display": "Azir — Mid",
+    "file": "Azir_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Bard_support",
+    "champion": "Bard",
+    "role": "Support",
+    "display": "Bard — Support",
+    "file": "Bard_support.png",
+    "bucket": null
+  },
+  {
+    "id": "BelVeth_jungle",
+    "champion": "Bel'Veth",
+    "role": "Jungle",
+    "display": "Bel'Veth — Jungle",
+    "file": "BelVeth_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Blitzcrank_support",
+    "champion": "Blitzcrank",
+    "role": "Support",
+    "display": "Blitzcrank — Support",
+    "file": "Blitzcrank_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Brand_mid",
+    "champion": "Brand",
+    "role": "Mid",
+    "display": "Brand — Mid",
+    "file": "Brand_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Brand_support",
+    "champion": "Brand",
+    "role": "Support",
+    "display": "Brand — Support",
+    "file": "Brand_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Braum_support",
+    "champion": "Braum",
+    "role": "Support",
+    "display": "Braum — Support",
+    "file": "Braum_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Briar_jungle",
+    "champion": "Briar",
+    "role": "Jungle",
+    "display": "Briar — Jungle",
+    "file": "Briar_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Caitlyn_bot",
+    "champion": "Caitlyn",
+    "role": "Bot",
+    "display": "Caitlyn — Bot",
+    "file": "Caitlyn_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Camille_top",
+    "champion": "Camille",
+    "role": "Top",
+    "display": "Camille — Top",
+    "file": "Camille_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Cassiopeia_mid",
+    "champion": "Cassiopeia",
+    "role": "Mid",
+    "display": "Cassiopeia — Mid",
+    "file": "Cassiopeia_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "ChoGath_top",
+    "champion": "Cho'Gath",
+    "role": "Top",
+    "display": "Cho'Gath — Top",
+    "file": "ChoGath_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Corki_bot",
+    "champion": "Corki",
+    "role": "Bot",
+    "display": "Corki — Bot",
+    "file": "Corki_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Darius_top",
+    "champion": "Darius",
+    "role": "Top",
+    "display": "Darius — Top",
+    "file": "Darius_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Diana_jungle",
+    "champion": "Diana",
+    "role": "Jungle",
+    "display": "Diana — Jungle",
+    "file": "Diana_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Diana_mid",
+    "champion": "Diana",
+    "role": "Mid",
+    "display": "Diana — Mid",
+    "file": "Diana_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Dr_Mundo_jungle",
+    "champion": "Dr. Mundo",
+    "role": "Jungle",
+    "display": "Dr. Mundo — Jungle",
+    "file": "Dr_Mundo_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Dr_Mundo_top",
+    "champion": "Dr. Mundo",
+    "role": "Top",
+    "display": "Dr. Mundo — Top",
+    "file": "Dr_Mundo_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Draven_bot",
+    "champion": "Draven",
+    "role": "Bot",
+    "display": "Draven — Bot",
+    "file": "Draven_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Ekko_jungle",
+    "champion": "Ekko",
+    "role": "Jungle",
+    "display": "Ekko — Jungle",
+    "file": "Ekko_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Ekko_mid",
+    "champion": "Ekko",
+    "role": "Mid",
+    "display": "Ekko — Mid",
+    "file": "Ekko_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Elise_jungle",
+    "champion": "Elise",
+    "role": "Jungle",
+    "display": "Elise — Jungle",
+    "file": "Elise_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Evelynn_jungle",
+    "champion": "Evelynn",
+    "role": "Jungle",
+    "display": "Evelynn — Jungle",
+    "file": "Evelynn_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Ezreal_bot",
+    "champion": "Ezreal",
+    "role": "Bot",
+    "display": "Ezreal — Bot",
+    "file": "Ezreal_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Fiddlesticks_jungle",
+    "champion": "Fiddlesticks",
+    "role": "Jungle",
+    "display": "Fiddlesticks — Jungle",
+    "file": "Fiddlesticks_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Fiora_top",
+    "champion": "Fiora",
+    "role": "Top",
+    "display": "Fiora — Top",
+    "file": "Fiora_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Fizz_jungle",
+    "champion": "Fizz",
+    "role": "Jungle",
+    "display": "Fizz — Jungle",
+    "file": "Fizz_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Fizz_mid",
+    "champion": "Fizz",
+    "role": "Mid",
+    "display": "Fizz — Mid",
+    "file": "Fizz_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Galio_mid",
+    "champion": "Galio",
+    "role": "Mid",
+    "display": "Galio — Mid",
+    "file": "Galio_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Gangplank_top",
+    "champion": "Gangplank",
+    "role": "Top",
+    "display": "Gangplank — Top",
+    "file": "Gangplank_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Garen_top",
+    "champion": "Garen",
+    "role": "Top",
+    "display": "Garen — Top",
+    "file": "Garen_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Gnar_top",
+    "champion": "Gnar",
+    "role": "Top",
+    "display": "Gnar — Top",
+    "file": "Gnar_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Gragas_top",
+    "champion": "Gragas",
+    "role": "Top",
+    "display": "Gragas — Top",
+    "file": "Gragas_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Graves_jungle",
+    "champion": "Graves",
+    "role": "Jungle",
+    "display": "Graves — Jungle",
+    "file": "Graves_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Gwen_jungle",
+    "champion": "Gwen",
+    "role": "Jungle",
+    "display": "Gwen — Jungle",
+    "file": "Gwen_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Gwen_top",
+    "champion": "Gwen",
+    "role": "Top",
+    "display": "Gwen — Top",
+    "file": "Gwen_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Hecarim_jungle",
+    "champion": "Hecarim",
+    "role": "Jungle",
+    "display": "Hecarim — Jungle",
+    "file": "Hecarim_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Heimerdinger_top",
+    "champion": "Heimerdinger",
+    "role": "Top",
+    "display": "Heimerdinger — Top",
+    "file": "Heimerdinger_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Hwei_mid",
+    "champion": "Hwei",
+    "role": "Mid",
+    "display": "Hwei — Mid",
+    "file": "Hwei_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Illaoi_top",
+    "champion": "Illaoi",
+    "role": "Top",
+    "display": "Illaoi — Top",
+    "file": "Illaoi_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Irelia_mid",
+    "champion": "Irelia",
+    "role": "Mid",
+    "display": "Irelia — Mid",
+    "file": "Irelia_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Irelia_top",
+    "champion": "Irelia",
+    "role": "Top",
+    "display": "Irelia — Top",
+    "file": "Irelia_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Janna_support",
+    "champion": "Janna",
+    "role": "Support",
+    "display": "Janna — Support",
+    "file": "Janna_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Jarvan_IV_jungle",
+    "champion": "Jarvan IV",
+    "role": "Jungle",
+    "display": "Jarvan IV — Jungle",
+    "file": "Jarvan_IV_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Jax_jungle",
+    "champion": "Jax",
+    "role": "Jungle",
+    "display": "Jax — Jungle",
+    "file": "Jax_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Jax_top",
+    "champion": "Jax",
+    "role": "Top",
+    "display": "Jax — Top",
+    "file": "Jax_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Jayce_top",
+    "champion": "Jayce",
+    "role": "Top",
+    "display": "Jayce — Top",
+    "file": "Jayce_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Jhin_bot",
+    "champion": "Jhin",
+    "role": "Bot",
+    "display": "Jhin — Bot",
+    "file": "Jhin_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Jinx_bot",
+    "champion": "Jinx",
+    "role": "Bot",
+    "display": "Jinx — Bot",
+    "file": "Jinx_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "KSante_top",
+    "champion": "K'Sante",
+    "role": "Top",
+    "display": "K'Sante — Top",
+    "file": "KSante_top.png",
+    "bucket": null
+  },
+  {
+    "id": "KaiSa_bot",
+    "champion": "Kai'Sa",
+    "role": "Bot",
+    "display": "Kai'Sa — Bot",
+    "file": "KaiSa_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Kalista_bot",
+    "champion": "Kalista",
+    "role": "Bot",
+    "display": "Kalista — Bot",
+    "file": "Kalista_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Karma_support",
+    "champion": "Karma",
+    "role": "Support",
+    "display": "Karma — Support",
+    "file": "Karma_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Karthus_jungle",
+    "champion": "Karthus",
+    "role": "Jungle",
+    "display": "Karthus — Jungle",
+    "file": "Karthus_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Kassadin_mid",
+    "champion": "Kassadin",
+    "role": "Mid",
+    "display": "Kassadin — Mid",
+    "file": "Kassadin_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Katarina_mid",
+    "champion": "Katarina",
+    "role": "Mid",
+    "display": "Katarina — Mid",
+    "file": "Katarina_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Kayle_top",
+    "champion": "Kayle",
+    "role": "Top",
+    "display": "Kayle — Top",
+    "file": "Kayle_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Kayn_jungle",
+    "champion": "Kayn",
+    "role": "Jungle",
+    "display": "Kayn — Jungle",
+    "file": "Kayn_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Kennen_top",
+    "champion": "Kennen",
+    "role": "Top",
+    "display": "Kennen — Top",
+    "file": "Kennen_top.png",
+    "bucket": null
+  },
+  {
+    "id": "KhaZix_jungle",
+    "champion": "Kha'Zix",
+    "role": "Jungle",
+    "display": "Kha'Zix — Jungle",
+    "file": "KhaZix_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Kindred_jungle",
+    "champion": "Kindred",
+    "role": "Jungle",
+    "display": "Kindred — Jungle",
+    "file": "Kindred_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Kled_top",
+    "champion": "Kled",
+    "role": "Top",
+    "display": "Kled — Top",
+    "file": "Kled_top.png",
+    "bucket": null
+  },
+  {
+    "id": "KogMaw_bot",
+    "champion": "Kog'Maw",
+    "role": "Bot",
+    "display": "Kog'Maw — Bot",
+    "file": "KogMaw_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "LeBlanc_mid",
+    "champion": "LeBlanc",
+    "role": "Mid",
+    "display": "LeBlanc — Mid",
+    "file": "LeBlanc_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Lee_Sin_jungle",
+    "champion": "Lee Sin",
+    "role": "Jungle",
+    "display": "Lee Sin — Jungle",
+    "file": "Lee_Sin_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Leona_support",
+    "champion": "Leona",
+    "role": "Support",
+    "display": "Leona — Support",
+    "file": "Leona_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Lillia_jungle",
+    "champion": "Lillia",
+    "role": "Jungle",
+    "display": "Lillia — Jungle",
+    "file": "Lillia_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Lissandra_mid",
+    "champion": "Lissandra",
+    "role": "Mid",
+    "display": "Lissandra — Mid",
+    "file": "Lissandra_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Lucian_bot",
+    "champion": "Lucian",
+    "role": "Bot",
+    "display": "Lucian — Bot",
+    "file": "Lucian_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Lulu_support",
+    "champion": "Lulu",
+    "role": "Support",
+    "display": "Lulu — Support",
+    "file": "Lulu_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Lux_mid",
+    "champion": "Lux",
+    "role": "Mid",
+    "display": "Lux — Mid",
+    "file": "Lux_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Lux_support",
+    "champion": "Lux",
+    "role": "Support",
+    "display": "Lux — Support",
+    "file": "Lux_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Malphite_jungle",
+    "champion": "Malphite",
+    "role": "Jungle",
+    "display": "Malphite — Jungle",
+    "file": "Malphite_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Malphite_mid",
+    "champion": "Malphite",
+    "role": "Mid",
+    "display": "Malphite — Mid",
+    "file": "Malphite_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Malphite_top",
+    "champion": "Malphite",
+    "role": "Top",
+    "display": "Malphite — Top",
+    "file": "Malphite_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Malzahar_mid",
+    "champion": "Malzahar",
+    "role": "Mid",
+    "display": "Malzahar — Mid",
+    "file": "Malzahar_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Maokai_support",
+    "champion": "Maokai",
+    "role": "Support",
+    "display": "Maokai — Support",
+    "file": "Maokai_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Master_Yi_jungle",
+    "champion": "Master Yi",
+    "role": "Jungle",
+    "display": "Master Yi — Jungle",
+    "file": "Master_Yi_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Mel_bot",
+    "champion": "Mel",
+    "role": "Bot",
+    "display": "Mel — Bot",
+    "file": "Mel_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Mel_mid",
+    "champion": "Mel",
+    "role": "Mid",
+    "display": "Mel — Mid",
+    "file": "Mel_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Mel_support",
+    "champion": "Mel",
+    "role": "Support",
+    "display": "Mel — Support",
+    "file": "Mel_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Milio_support",
+    "champion": "Milio",
+    "role": "Support",
+    "display": "Milio — Support",
+    "file": "Milio_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Miss_Fortune_bot",
+    "champion": "Miss Fortune",
+    "role": "Bot",
+    "display": "Miss Fortune — Bot",
+    "file": "Miss_Fortune_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Mordekaiser_top",
+    "champion": "Mordekaiser",
+    "role": "Top",
+    "display": "Mordekaiser — Top",
+    "file": "Mordekaiser_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Morgana_support",
+    "champion": "Morgana",
+    "role": "Support",
+    "display": "Morgana — Support",
+    "file": "Morgana_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Naafiri_jungle",
+    "champion": "Naafiri",
+    "role": "Jungle",
+    "display": "Naafiri — Jungle",
+    "file": "Naafiri_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Naafiri_mid",
+    "champion": "Naafiri",
+    "role": "Mid",
+    "display": "Naafiri — Mid",
+    "file": "Naafiri_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Nami_support",
+    "champion": "Nami",
+    "role": "Support",
+    "display": "Nami — Support",
+    "file": "Nami_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Nasus_jungle",
+    "champion": "Nasus",
+    "role": "Jungle",
+    "display": "Nasus — Jungle",
+    "file": "Nasus_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Nasus_top",
+    "champion": "Nasus",
+    "role": "Top",
+    "display": "Nasus — Top",
+    "file": "Nasus_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Nautilus_support",
+    "champion": "Nautilus",
+    "role": "Support",
+    "display": "Nautilus — Support",
+    "file": "Nautilus_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Neeko_support",
+    "champion": "Neeko",
+    "role": "Support",
+    "display": "Neeko — Support",
+    "file": "Neeko_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Nidalee_jungle",
+    "champion": "Nidalee",
+    "role": "Jungle",
+    "display": "Nidalee — Jungle",
+    "file": "Nidalee_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Nilah_bot",
+    "champion": "Nilah",
+    "role": "Bot",
+    "display": "Nilah — Bot",
+    "file": "Nilah_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Nocturne_jungle",
+    "champion": "Nocturne",
+    "role": "Jungle",
+    "display": "Nocturne — Jungle",
+    "file": "Nocturne_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Nunu_and_Willump_jungle",
+    "champion": "Nunu & Willump",
+    "role": "Jungle",
+    "display": "Nunu & Willump — Jungle",
+    "file": "Nunu_and_Willump_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Olaf_top",
+    "champion": "Olaf",
+    "role": "Top",
+    "display": "Olaf — Top",
+    "file": "Olaf_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Orianna_mid",
+    "champion": "Orianna",
+    "role": "Mid",
+    "display": "Orianna — Mid",
+    "file": "Orianna_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Ornn_top",
+    "champion": "Ornn",
+    "role": "Top",
+    "display": "Ornn — Top",
+    "file": "Ornn_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Pantheon_jungle",
+    "champion": "Pantheon",
+    "role": "Jungle",
+    "display": "Pantheon — Jungle",
+    "file": "Pantheon_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Pantheon_support",
+    "champion": "Pantheon",
+    "role": "Support",
+    "display": "Pantheon — Support",
+    "file": "Pantheon_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Pantheon_top",
+    "champion": "Pantheon",
+    "role": "Top",
+    "display": "Pantheon — Top",
+    "file": "Pantheon_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Poppy_support",
+    "champion": "Poppy",
+    "role": "Support",
+    "display": "Poppy — Support",
+    "file": "Poppy_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Poppy_top",
+    "champion": "Poppy",
+    "role": "Top",
+    "display": "Poppy — Top",
+    "file": "Poppy_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Pyke_support",
+    "champion": "Pyke",
+    "role": "Support",
+    "display": "Pyke — Support",
+    "file": "Pyke_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Qiyana_mid",
+    "champion": "Qiyana",
+    "role": "Mid",
+    "display": "Qiyana — Mid",
+    "file": "Qiyana_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Quinn_top",
+    "champion": "Quinn",
+    "role": "Top",
+    "display": "Quinn — Top",
+    "file": "Quinn_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Rakan_support",
+    "champion": "Rakan",
+    "role": "Support",
+    "display": "Rakan — Support",
+    "file": "Rakan_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Rammus_jungle",
+    "champion": "Rammus",
+    "role": "Jungle",
+    "display": "Rammus — Jungle",
+    "file": "Rammus_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "RekSai_jungle",
+    "champion": "Rek'Sai",
+    "role": "Jungle",
+    "display": "Rek'Sai — Jungle",
+    "file": "RekSai_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Rell_support",
+    "champion": "Rell",
+    "role": "Support",
+    "display": "Rell — Support",
+    "file": "Rell_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Renekton_top",
+    "champion": "Renekton",
+    "role": "Top",
+    "display": "Renekton — Top",
+    "file": "Renekton_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Rengar_jungle",
+    "champion": "Rengar",
+    "role": "Jungle",
+    "display": "Rengar — Jungle",
+    "file": "Rengar_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Riven_top",
+    "champion": "Riven",
+    "role": "Top",
+    "display": "Riven — Top",
+    "file": "Riven_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Rumble_top",
+    "champion": "Rumble",
+    "role": "Top",
+    "display": "Rumble — Top",
+    "file": "Rumble_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Ryze_mid",
+    "champion": "Ryze",
+    "role": "Mid",
+    "display": "Ryze — Mid",
+    "file": "Ryze_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Samira_bot",
+    "champion": "Samira",
+    "role": "Bot",
+    "display": "Samira — Bot",
+    "file": "Samira_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Sejuani_jungle",
+    "champion": "Sejuani",
+    "role": "Jungle",
+    "display": "Sejuani — Jungle",
+    "file": "Sejuani_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Senna_bot",
+    "champion": "Senna",
+    "role": "Bot",
+    "display": "Senna — Bot",
+    "file": "Senna_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Senna_support",
+    "champion": "Senna",
+    "role": "Support",
+    "display": "Senna — Support",
+    "file": "Senna_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Seraphine_support",
+    "champion": "Seraphine",
+    "role": "Support",
+    "display": "Seraphine — Support",
+    "file": "Seraphine_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Sett_top",
+    "champion": "Sett",
+    "role": "Top",
+    "display": "Sett — Top",
+    "file": "Sett_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Shaco_jungle",
+    "champion": "Shaco",
+    "role": "Jungle",
+    "display": "Shaco — Jungle",
+    "file": "Shaco_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Shaco_support",
+    "champion": "Shaco",
+    "role": "Support",
+    "display": "Shaco — Support",
+    "file": "Shaco_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Shen_jungle",
+    "champion": "Shen",
+    "role": "Jungle",
+    "display": "Shen — Jungle",
+    "file": "Shen_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Shen_top",
+    "champion": "Shen",
+    "role": "Top",
+    "display": "Shen — Top",
+    "file": "Shen_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Shyvana_jungle",
+    "champion": "Shyvana",
+    "role": "Jungle",
+    "display": "Shyvana — Jungle",
+    "file": "Shyvana_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Shyvana_top",
+    "champion": "Shyvana",
+    "role": "Top",
+    "display": "Shyvana — Top",
+    "file": "Shyvana_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Singed_top",
+    "champion": "Singed",
+    "role": "Top",
+    "display": "Singed — Top",
+    "file": "Singed_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Sion_top",
+    "champion": "Sion",
+    "role": "Top",
+    "display": "Sion — Top",
+    "file": "Sion_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Sivir_bot",
+    "champion": "Sivir",
+    "role": "Bot",
+    "display": "Sivir — Bot",
+    "file": "Sivir_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Smolder_bot",
+    "champion": "Smolder",
+    "role": "Bot",
+    "display": "Smolder — Bot",
+    "file": "Smolder_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Sona_support",
+    "champion": "Sona",
+    "role": "Support",
+    "display": "Sona — Support",
+    "file": "Sona_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Soraka_support",
+    "champion": "Soraka",
+    "role": "Support",
+    "display": "Soraka — Support",
+    "file": "Soraka_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Swain_bot",
+    "champion": "Swain",
+    "role": "Bot",
+    "display": "Swain — Bot",
+    "file": "Swain_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Swain_mid",
+    "champion": "Swain",
+    "role": "Mid",
+    "display": "Swain — Mid",
+    "file": "Swain_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Swain_support",
+    "champion": "Swain",
+    "role": "Support",
+    "display": "Swain — Support",
+    "file": "Swain_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Sylas_jungle",
+    "champion": "Sylas",
+    "role": "Jungle",
+    "display": "Sylas — Jungle",
+    "file": "Sylas_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Sylas_mid",
+    "champion": "Sylas",
+    "role": "Mid",
+    "display": "Sylas — Mid",
+    "file": "Sylas_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Syndra_mid",
+    "champion": "Syndra",
+    "role": "Mid",
+    "display": "Syndra — Mid",
+    "file": "Syndra_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Tahm_Kench_support",
+    "champion": "Tahm Kench",
+    "role": "Support",
+    "display": "Tahm Kench — Support",
+    "file": "Tahm_Kench_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Tahm_Kench_top",
+    "champion": "Tahm Kench",
+    "role": "Top",
+    "display": "Tahm Kench — Top",
+    "file": "Tahm_Kench_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Taliyah_mid",
+    "champion": "Taliyah",
+    "role": "Mid",
+    "display": "Taliyah — Mid",
+    "file": "Taliyah_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Talon_jungle",
+    "champion": "Talon",
+    "role": "Jungle",
+    "display": "Talon — Jungle",
+    "file": "Talon_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Talon_mid",
+    "champion": "Talon",
+    "role": "Mid",
+    "display": "Talon — Mid",
+    "file": "Talon_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Taric_support",
+    "champion": "Taric",
+    "role": "Support",
+    "display": "Taric — Support",
+    "file": "Taric_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Teemo_jungle",
+    "champion": "Teemo",
+    "role": "Jungle",
+    "display": "Teemo — Jungle",
+    "file": "Teemo_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Teemo_top",
+    "champion": "Teemo",
+    "role": "Top",
+    "display": "Teemo — Top",
+    "file": "Teemo_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Thresh_support",
+    "champion": "Thresh",
+    "role": "Support",
+    "display": "Thresh — Support",
+    "file": "Thresh_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Tristana_bot",
+    "champion": "Tristana",
+    "role": "Bot",
+    "display": "Tristana — Bot",
+    "file": "Tristana_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Trundle_jungle",
+    "champion": "Trundle",
+    "role": "Jungle",
+    "display": "Trundle — Jungle",
+    "file": "Trundle_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Trundle_top",
+    "champion": "Trundle",
+    "role": "Top",
+    "display": "Trundle — Top",
+    "file": "Trundle_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Tryndamere_top",
+    "champion": "Tryndamere",
+    "role": "Top",
+    "display": "Tryndamere — Top",
+    "file": "Tryndamere_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Twisted_Fate_mid",
+    "champion": "Twisted Fate",
+    "role": "Mid",
+    "display": "Twisted Fate — Mid",
+    "file": "Twisted_Fate_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Twitch_bot",
+    "champion": "Twitch",
+    "role": "Bot",
+    "display": "Twitch — Bot",
+    "file": "Twitch_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Udyr_jungle",
+    "champion": "Udyr",
+    "role": "Jungle",
+    "display": "Udyr — Jungle",
+    "file": "Udyr_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Urgot_top",
+    "champion": "Urgot",
+    "role": "Top",
+    "display": "Urgot — Top",
+    "file": "Urgot_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Varus_bot",
+    "champion": "Varus",
+    "role": "Bot",
+    "display": "Varus — Bot",
+    "file": "Varus_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Varus_top",
+    "champion": "Varus",
+    "role": "Top",
+    "display": "Varus — Top",
+    "file": "Varus_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Vayne_bot",
+    "champion": "Vayne",
+    "role": "Bot",
+    "display": "Vayne — Bot",
+    "file": "Vayne_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Vayne_top",
+    "champion": "Vayne",
+    "role": "Top",
+    "display": "Vayne — Top",
+    "file": "Vayne_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Veigar_bot",
+    "champion": "Veigar",
+    "role": "Bot",
+    "display": "Veigar — Bot",
+    "file": "Veigar_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Veigar_mid",
+    "champion": "Veigar",
+    "role": "Mid",
+    "display": "Veigar — Mid",
+    "file": "Veigar_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "VelKoz_mid",
+    "champion": "Vel'Koz",
+    "role": "Mid",
+    "display": "Vel'Koz — Mid",
+    "file": "VelKoz_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "VelKoz_support",
+    "champion": "Vel'Koz",
+    "role": "Support",
+    "display": "Vel'Koz — Support",
+    "file": "VelKoz_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Vex_mid",
+    "champion": "Vex",
+    "role": "Mid",
+    "display": "Vex — Mid",
+    "file": "Vex_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Vi_jungle",
+    "champion": "Vi",
+    "role": "Jungle",
+    "display": "Vi — Jungle",
+    "file": "Vi_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Viego_jungle",
+    "champion": "Viego",
+    "role": "Jungle",
+    "display": "Viego — Jungle",
+    "file": "Viego_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Viktor_mid",
+    "champion": "Viktor",
+    "role": "Mid",
+    "display": "Viktor — Mid",
+    "file": "Viktor_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Vladimir_mid",
+    "champion": "Vladimir",
+    "role": "Mid",
+    "display": "Vladimir — Mid",
+    "file": "Vladimir_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Vladimir_top",
+    "champion": "Vladimir",
+    "role": "Top",
+    "display": "Vladimir — Top",
+    "file": "Vladimir_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Volibear_jungle",
+    "champion": "Volibear",
+    "role": "Jungle",
+    "display": "Volibear — Jungle",
+    "file": "Volibear_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Volibear_top",
+    "champion": "Volibear",
+    "role": "Top",
+    "display": "Volibear — Top",
+    "file": "Volibear_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Warwick_jungle",
+    "champion": "Warwick",
+    "role": "Jungle",
+    "display": "Warwick — Jungle",
+    "file": "Warwick_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Warwick_top",
+    "champion": "Warwick",
+    "role": "Top",
+    "display": "Warwick — Top",
+    "file": "Warwick_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Wukong_jungle",
+    "champion": "Wukong",
+    "role": "Jungle",
+    "display": "Wukong — Jungle",
+    "file": "Wukong_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Xayah_bot",
+    "champion": "Xayah",
+    "role": "Bot",
+    "display": "Xayah — Bot",
+    "file": "Xayah_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Xerath_mid",
+    "champion": "Xerath",
+    "role": "Mid",
+    "display": "Xerath — Mid",
+    "file": "Xerath_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Xerath_support",
+    "champion": "Xerath",
+    "role": "Support",
+    "display": "Xerath — Support",
+    "file": "Xerath_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Xin_Zhao_jungle",
+    "champion": "Xin Zhao",
+    "role": "Jungle",
+    "display": "Xin Zhao — Jungle",
+    "file": "Xin_Zhao_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Yasuo_bot",
+    "champion": "Yasuo",
+    "role": "Bot",
+    "display": "Yasuo — Bot",
+    "file": "Yasuo_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Yasuo_mid",
+    "champion": "Yasuo",
+    "role": "Mid",
+    "display": "Yasuo — Mid",
+    "file": "Yasuo_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Yasuo_top",
+    "champion": "Yasuo",
+    "role": "Top",
+    "display": "Yasuo — Top",
+    "file": "Yasuo_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Yone_mid",
+    "champion": "Yone",
+    "role": "Mid",
+    "display": "Yone — Mid",
+    "file": "Yone_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Yone_top",
+    "champion": "Yone",
+    "role": "Top",
+    "display": "Yone — Top",
+    "file": "Yone_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Yorick_top",
+    "champion": "Yorick",
+    "role": "Top",
+    "display": "Yorick — Top",
+    "file": "Yorick_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Yunara_bot",
+    "champion": "Yunara",
+    "role": "Bot",
+    "display": "Yunara — Bot",
+    "file": "Yunara_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Yuumi_support",
+    "champion": "Yuumi",
+    "role": "Support",
+    "display": "Yuumi — Support",
+    "file": "Yuumi_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Zaahen_jungle",
+    "champion": "Zaahen",
+    "role": "Jungle",
+    "display": "Zaahen — Jungle",
+    "file": "Zaahen_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Zaahen_top",
+    "champion": "Zaahen",
+    "role": "Top",
+    "display": "Zaahen — Top",
+    "file": "Zaahen_top.png",
+    "bucket": null
+  },
+  {
+    "id": "Zac_jungle",
+    "champion": "Zac",
+    "role": "Jungle",
+    "display": "Zac — Jungle",
+    "file": "Zac_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Zed_jungle",
+    "champion": "Zed",
+    "role": "Jungle",
+    "display": "Zed — Jungle",
+    "file": "Zed_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Zed_mid",
+    "champion": "Zed",
+    "role": "Mid",
+    "display": "Zed — Mid",
+    "file": "Zed_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Zeri_bot",
+    "champion": "Zeri",
+    "role": "Bot",
+    "display": "Zeri — Bot",
+    "file": "Zeri_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Ziggs_bot",
+    "champion": "Ziggs",
+    "role": "Bot",
+    "display": "Ziggs — Bot",
+    "file": "Ziggs_bot.png",
+    "bucket": null
+  },
+  {
+    "id": "Ziggs_mid",
+    "champion": "Ziggs",
+    "role": "Mid",
+    "display": "Ziggs — Mid",
+    "file": "Ziggs_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Zilean_support",
+    "champion": "Zilean",
+    "role": "Support",
+    "display": "Zilean — Support",
+    "file": "Zilean_support.png",
+    "bucket": null
+  },
+  {
+    "id": "Zoe_mid",
+    "champion": "Zoe",
+    "role": "Mid",
+    "display": "Zoe — Mid",
+    "file": "Zoe_mid.png",
+    "bucket": null
+  },
+  {
+    "id": "Zyra_jungle",
+    "champion": "Zyra",
+    "role": "Jungle",
+    "display": "Zyra — Jungle",
+    "file": "Zyra_jungle.png",
+    "bucket": null
+  },
+  {
+    "id": "Zyra_support",
+    "champion": "Zyra",
+    "role": "Support",
+    "display": "Zyra — Support",
+    "file": "Zyra_support.png",
+    "bucket": null
+  }
+]

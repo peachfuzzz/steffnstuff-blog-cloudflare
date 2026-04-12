@@ -1,0 +1,342 @@
+---
+interface Props {
+  manifestPath?: string;
+  imagePath?: string;
+}
+
+const {
+  manifestPath = '/wad-profiles-manifest.json',
+  imagePath = '/assets/wad-profiles',
+} = Astro.props;
+---
+
+<div
+  class="profile-viewer"
+  data-manifest-path={manifestPath}
+  data-image-path={imagePath}
+>
+  <label class="viewer-label" id="viewer-label">
+    Explore champion WARA elo skew profiles
+  </label>
+
+  <div class="combobox-container">
+    <input
+      type="text"
+      class="search-input"
+      role="combobox"
+      aria-expanded="false"
+      aria-controls="profile-listbox"
+      aria-labelledby="viewer-label"
+      aria-autocomplete="list"
+      placeholder="Search champion..."
+    />
+    <ul
+      class="dropdown"
+      role="listbox"
+      aria-labelledby="viewer-label"
+      hidden
+    ></ul>
+  </div>
+
+  <div class="profile-display">
+    <p class="instructional-message">
+      Select a champion to view their WARA elo skew profile.
+    </p>
+    <img class="profile-image" alt="" hidden />
+    <p class="error-message" hidden>
+      Could not load the profile image. Please try another champion.
+    </p>
+  </div>
+</div>
+
+<style>
+  .profile-viewer {
+    margin: 2rem 0;
+    font-family: inherit;
+  }
+
+  .viewer-label {
+    display: block;
+    font-size: 0.8rem;
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  .combobox-container {
+    position: relative;
+    max-width: 28rem;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    background: #fff;
+    box-sizing: border-box;
+  }
+
+  .search-input:focus {
+    outline: 2px solid #5b7fa6;
+    outline-offset: -1px;
+    border-color: #5b7fa6;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 16rem;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+  }
+
+  .dropdown li {
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown li:hover,
+  .dropdown li[aria-selected="true"] {
+    background: #f0f4f8;
+  }
+
+  .profile-display {
+    margin-top: 1rem;
+  }
+
+  .profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .instructional-message,
+  .error-message {
+    color: #888;
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+
+  .error-message {
+    color: #c0392b;
+  }
+</style>
+
+<script>
+  function initViewer(viewer: HTMLElement) {
+    const manifestPath = viewer.dataset.manifestPath!;
+    const imagePath = viewer.dataset.imagePath!;
+
+    const input = viewer.querySelector<HTMLInputElement>(".search-input")!;
+    const dropdown = viewer.querySelector<HTMLUListElement>(".dropdown")!;
+    const profileImage = viewer.querySelector<HTMLImageElement>(".profile-image")!;
+    const instructional = viewer.querySelector<HTMLParagraphElement>(".instructional-message")!;
+    const errorMessage = viewer.querySelector<HTMLParagraphElement>(".error-message")!;
+
+    // Generate unique IDs for this instance
+    const uid = Math.random().toString(36).slice(2, 8);
+    const listboxId = `profile-listbox-${uid}`;
+    dropdown.id = listboxId;
+    input.setAttribute("aria-controls", listboxId);
+
+    interface ManifestEntry {
+      id: string;
+      champion: string;
+      role: string;
+      display: string;
+      file: string;
+      bucket: string | null;
+    }
+
+    let manifest: ManifestEntry[] = [];
+    let filtered: ManifestEntry[] = [];
+    let activeIndex = -1;
+    let isOpen = false;
+
+    // ── Fetch manifest ──────────────────────────────────────────────────
+
+    fetch(manifestPath)
+      .then((res) => res.json())
+      .then((data: ManifestEntry[]) => {
+        manifest = data;
+        filtered = data;
+      })
+      .catch((err) => {
+        console.error("Failed to load champion manifest:", err);
+      });
+
+    // ── Dropdown rendering ──────────────────────────────────────────────
+
+    function renderDropdown() {
+      dropdown.innerHTML = "";
+      filtered.forEach((entry, i) => {
+        const li = document.createElement("li");
+        li.textContent = entry.display;
+        li.id = `${listboxId}-option-${i}`;
+        li.setAttribute("role", "option");
+        li.setAttribute("aria-selected", i === activeIndex ? "true" : "false");
+
+        li.addEventListener("mousedown", (e) => {
+          e.preventDefault(); // prevent input blur
+          selectItem(entry);
+        });
+
+        li.addEventListener("mouseenter", () => {
+          activeIndex = i;
+          updateActiveDescendant();
+        });
+
+        dropdown.appendChild(li);
+      });
+    }
+
+    function updateActiveDescendant() {
+      const items = dropdown.querySelectorAll("li");
+      items.forEach((li, i) => {
+        li.setAttribute("aria-selected", i === activeIndex ? "true" : "false");
+      });
+
+      if (activeIndex >= 0) {
+        input.setAttribute("aria-activedescendant", `${listboxId}-option-${activeIndex}`);
+        // Scroll active item into view
+        items[activeIndex]?.scrollIntoView({ block: "nearest" });
+      } else {
+        input.removeAttribute("aria-activedescendant");
+      }
+    }
+
+    // ── Open / close ────────────────────────────────────────────────────
+
+    function openDropdown() {
+      if (filtered.length === 0) return;
+      isOpen = true;
+      dropdown.hidden = false;
+      input.setAttribute("aria-expanded", "true");
+      renderDropdown();
+    }
+
+    function closeDropdown() {
+      isOpen = false;
+      dropdown.hidden = true;
+      input.setAttribute("aria-expanded", "false");
+      activeIndex = -1;
+      input.removeAttribute("aria-activedescendant");
+    }
+
+    // ── Selection ───────────────────────────────────────────────────────
+
+    function selectItem(entry: ManifestEntry) {
+      input.value = entry.display;
+      closeDropdown();
+
+      const src = `${imagePath}/${entry.file}`;
+      profileImage.src = src;
+      profileImage.alt = `WARA elo skew profile for ${entry.display}`;
+      profileImage.hidden = false;
+      instructional.hidden = true;
+      errorMessage.hidden = true;
+
+      profileImage.onerror = () => {
+        profileImage.hidden = true;
+        errorMessage.hidden = false;
+      };
+    }
+
+    // ── Filtering ───────────────────────────────────────────────────────
+
+    function filterManifest(query: string) {
+      const q = query.toLowerCase();
+      if (q === "") {
+        filtered = manifest;
+      } else {
+        filtered = manifest.filter((e) =>
+          e.display.toLowerCase().includes(q)
+        );
+      }
+      activeIndex = -1;
+    }
+
+    // ── Event listeners ─────────────────────────────────────────────────
+
+    input.addEventListener("input", () => {
+      filterManifest(input.value);
+      if (input.value.length > 0 || document.activeElement === input) {
+        openDropdown();
+      } else {
+        closeDropdown();
+      }
+    });
+
+    input.addEventListener("focus", () => {
+      filterManifest(input.value);
+      openDropdown();
+    });
+
+    input.addEventListener("blur", () => {
+      // Delay to allow mousedown on dropdown items to fire
+      setTimeout(() => closeDropdown(), 150);
+    });
+
+    input.addEventListener("keydown", (e: KeyboardEvent) => {
+      switch (e.key) {
+        case "ArrowDown":
+          e.preventDefault();
+          if (!isOpen) {
+            openDropdown();
+          }
+          if (activeIndex < filtered.length - 1) {
+            activeIndex++;
+            updateActiveDescendant();
+          }
+          break;
+
+        case "ArrowUp":
+          e.preventDefault();
+          if (activeIndex > 0) {
+            activeIndex--;
+            updateActiveDescendant();
+          }
+          break;
+
+        case "Enter":
+          e.preventDefault();
+          if (isOpen && activeIndex >= 0 && activeIndex < filtered.length) {
+            selectItem(filtered[activeIndex]);
+          }
+          break;
+
+        case "Escape":
+          closeDropdown();
+          break;
+      }
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!viewer.contains(e.target as Node)) {
+        closeDropdown();
+      }
+    });
+  }
+
+  // Initialize all instances on the page
+  document.querySelectorAll<HTMLElement>(".profile-viewer").forEach(initViewer);
+</script>
