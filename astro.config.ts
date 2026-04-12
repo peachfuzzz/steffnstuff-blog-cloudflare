@@ -8,6 +8,7 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import rehypeRaw from 'rehype-raw';
 import { visit, SKIP } from 'unist-util-visit';
+import mdx from "@astrojs/mdx";
 import { SITE } from "./src/config";
 
 function rehypeAnnotations() {
@@ -85,6 +86,7 @@ export default defineConfig({
     }),
     react(),
     sitemap(),
+    mdx()
   ],
   markdown: {
     remarkPlugins: 
