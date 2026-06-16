@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import ProjectCard from "@components/ProjectCard.astro";
+import { SITE } from "@config";
+
+const projects = (
+  await getCollection("projects", ({ data }) => !data.draft)
+).sort((a, b) => (a.data.order ?? Infinity) - (b.data.order ?? Infinity));
+---
+
+<Layout title={`Projects | ${SITE.title}`}>
+  <Header activeNav="projects" />
+  <Main
+    pageTitle="Projects"
+    pageDesc="Full-site projects and things I'm building beyond the blog."
+  >
+    <ul>
+      {projects.map(({ data }) => <ProjectCard {...data} />)}
+    </ul>
+  </Main>
+  <Footer />
+</Layout>

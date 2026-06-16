@@ -1,0 +1,37 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  url: string;
+  thumbnail: string;
+}
+
+const { title, description, url, thumbnail } = Astro.props;
+---
+
+<li class="my-6">
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="group flex flex-col gap-4 rounded-md border border-skin-line p-4 transition-colors hover:border-skin-accent focus-visible:border-skin-accent sm:flex-row sm:items-center"
+  >
+    <img
+      src={thumbnail}
+      alt={`${title} thumbnail`}
+      loading="lazy"
+      width="160"
+      height="100"
+      class="h-auto w-full rounded border border-skin-line object-cover sm:w-40 sm:flex-shrink-0"
+    />
+    <div>
+      <h2
+        class="text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 group-hover:underline"
+      >
+        {title}
+        <span aria-hidden="true">&#8599;</span>
+      </h2>
+      <p class="mt-1">{description}</p>
+    </div>
+  </a>
+</li>
