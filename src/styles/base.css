@@ -13,12 +13,12 @@
     --color-border: 244, 121, 131;
   }
   html[data-theme="dark"] {
-    --color-fill: 14, 10, 24;
+    --color-fill: 28, 34, 54;
     --color-text-base: 234, 237, 243;
-    --color-accent: 221, 125, 103;
-    --color-card: 221, 125, 103;
-    --color-card-muted: 238, 190, 179;
-    --color-border: 221, 125, 103;
+    --color-accent: 249, 178, 183;
+    --color-card: 249, 178, 183;
+    --color-card-muted: 253, 235, 236;
+    --color-border: 249, 178, 183;
   }
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
@@ -146,6 +146,36 @@
   }
   .annotation-content a:hover {
     opacity: 0.8;
+  }
+
+  /* ===== asides ===== */
+  .prose .aside {
+    width: min(95%, 42rem);
+    margin: 2rem auto;
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.5rem;
+    text-align: left;
+    font-size: 0.9375em;
+    line-height: 1.6;
+    color: rgba(var(--color-text-base), 0.9);
+    background: rgba(var(--color-card-muted), 0.3);
+  }
+  /* The dark --color-card-muted is a near-white blush against a dark ground,
+     so it needs far less of it to sit at the same weight as light. */
+  html[data-theme="dark"] .prose .aside {
+    background: rgba(var(--color-card-muted), 0.05);
+  }
+  .prose .aside > :first-child {
+    margin-top: 0;
+  }
+  .prose .aside > :last-child {
+    margin-bottom: 0;
+  }
+  @media (max-width: 640px) {
+    .prose .aside {
+      width: 100%;
+      padding: 1rem 1.125rem;
+    }
   }
 
   /* ===== scrollbar ===== */
