@@ -16,7 +16,7 @@ const {
   data-image-path={imagePath}
 >
   <label class="viewer-label" id="viewer-label">
-    Explore champion WARA elo skew profiles
+    Explore champion WARA elo curves
   </label>
 
   <div class="combobox-container">
@@ -40,7 +40,7 @@ const {
 
   <div class="profile-display">
     <p class="instructional-message">
-      Select a champion to view their WARA elo skew profile.
+      Select a champion to view their WARA elo curve.
     </p>
     <img class="profile-image" alt="" hidden />
     <p class="error-message" hidden>
@@ -57,9 +57,7 @@ const {
 
   .viewer-label {
     display: block;
-    font-size: 0.8rem;
-    font-variant: small-caps;
-    letter-spacing: 0.05em;
+    font-size: 0.9rem;
     color: #666;
     margin-bottom: 0.5rem;
   }
@@ -77,6 +75,7 @@ const {
     border: 1px solid #d0d0d0;
     border-radius: 4px;
     background: #fff;
+    color: #1a1a1a;
     box-sizing: border-box;
   }
 
@@ -97,6 +96,7 @@ const {
     padding: 0;
     list-style: none;
     background: #fff;
+    color: #1a1a1a;
     border: 1px solid #d0d0d0;
     border-top: none;
     border-radius: 0 0 4px 4px;
@@ -104,7 +104,10 @@ const {
     z-index: 10;
   }
 
-  .dropdown li {
+  /* The <li>s are created at runtime by the script below, so they never get
+     Astro's scoping class — without :global() these rules match nothing. */
+  .dropdown :global(li) {
+    color: #1a1a1a;
     padding: 0.5rem 0.75rem;
     cursor: pointer;
     font-size: 0.95rem;
@@ -113,8 +116,8 @@ const {
     align-items: center;
   }
 
-  .dropdown li:hover,
-  .dropdown li[aria-selected="true"] {
+  .dropdown :global(li:hover),
+  .dropdown :global(li[aria-selected="true"]) {
     background: #f0f4f8;
   }
 
