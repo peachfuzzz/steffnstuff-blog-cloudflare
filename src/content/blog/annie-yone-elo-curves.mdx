@@ -1,0 +1,142 @@
+---
+title: "If you're Bronze, you should pick Yone instead of Annie"
+author: Peachfuzzz
+pubDatetime: 2026-09-07 13:09:45
+slug: annie-yone-elo-curves
+featured: true
+draft: false
+tags:
+  - league of legends
+  - design
+description: "An exploration of elo curves in League of Legends"
+---
+
+import ChampionProfileViewer from './_components/ChampionProfileViewer.astro';
+
+## Annie, are you okay?
+I've had a suspicion for a long time that Annie is not as she appears. Despite being a champion with basically undodgeable spells, I always found her to be oddly difficult. Four years ago, on my path to hitting Diamond for the first time, I actually dropped Annie from my champion pool in favor of Garen mid because I found the latter to be simpler. The embarrassment of not being able to play *the* easy mage champion never left me, though. A while ago, reminded of Annie by her surprising presence in professional League of Legends, I headed off to justify my grudge against her with evidence. Maybe to write an essay about her. [Or a second.](https://steffnstuff.com/posts/patch-13-23-annie-reroll-guide/)
+
+My hypothesis about Annie was pretty simple. If Annie was easy, she would have a higher winrate in low elo and lower winrate in high elo. If she was hard, the opposite would show. This hypothesis rested on a major assumption.
+
+>Assumption 1: A champion's mastery curve (difficulty) was the main factor of their performance in different skill brackets, with more difficult champions performing relatively better at higher elos, and vice versa.
+
+I wanted some numbers to explore this line of reasoning, and my favorite numbers came from Lolalytics. Lolalytics captured data from various buckets, including winrates by champion and rank, which is exactly what I needed. Of course, statistics aren't particularly useful in isolation. Just seeing Annie's winrate, even across multiple ranks, doesn't really tell you much without a point of comparison. To come to a meaningful conclusion, I needed another champion with a (hopefully) known difficulty that I could use as a measuring stick. 
+
+Champion difficulty was (and is) an eternal debate, and mastery curve data was hard to come by (more on that maybe next time), so I tried to pick a champion that I could reasonably guess had a higher mastery curve. I ended up choosing Yone, the eternal poster child of frustration and kit overload. 
+
+>Assumption 2: Yone is harder than Annie.
+
+I felt pretty safe in my choice. If Assumption 2 held true, Annie should have had a relatively low winrate in higher ranks, while Yone should have had a relatively high winrate (and vice versa). I opened Lolalytics, set the filter to Diamond+, and found Annie sitting nearly 4% above Yone. When I filtered for only Bronze, Yone held a 2% winrate over Annie. 
+
+What?
+## An exploration of elo curve vs. mastery curve
+![Annie Lolalytics screenshot](https://images.steffnstuff.com/annie-yone-elo-curves/annie-lolalytics-screenshot.png)
+
+![Yone Lolalytics screenshot](https://images.steffnstuff.com/annie-yone-elo-curves/yone-lolalytics-screenshot.png "These screenshots were taken on April 8th filtering for Diamond+, 30 days, but the difference in winrate has remained pretty consistent throughout the past few patches. You can go see for yourself!")
+
+My initial reaction, like any reasonable League of Legends player, was that of disbelief. What the hell is going on here? My second reaction, like any reasonable person trying to use data to answer a question, was to try and formalize my inquiry. What I wanted wasn't just a pure comparison of winrates, but a comparison of an "elo curve": how performant a champion is by elo. For this, I returned to Lolalytics to pull some more specific stats. 
+
+:::aside
+Some people refer to a champion's change in winrate across ranks as elo "skew," but champion winrates across ranks are not Normal distributions. Also they're not binary, as you'll soon see.
+:::
+
+Per their methodology, Lolalytics lists the average winrate of a player of [x] rank. You can think of this as the winrate of the "average" champion, piloted by a Bronze player or whatever you designate. This "rank average" winrate is useful because it lets us account for how skilled players are expected to be at any given rank so we don't overly penalize lower ranked players for losing to higher ranked players, and vice versa.
+
+:::aside
+The data gets noisier at the extremes of the ranked ladder because of smaller sample sizes and winrate compression. At the top and bottom, players are mostly matched with other players of the same rank, so the winrates converge back towards 50% (in a game with 10 M+ players, someone has to lose). As such, I've omitted Iron from the plots, and I'll ask you to treat all Masters+ data points with a grain of salt. They're likely directionally accurate but have weird magnitudes because of the compression effects.
+:::
+
+The "rank average" winrate serves as a control for winrate comparisons at specific ranks. The difference between a rank average winrate and a champion's winrate in that rank is what I called the Winrate Above Rank Average (WARA), a number that tries to capture how strong a champion is in the hands of a player of [x] rank. For each champion, I plotted their WARA per rank, using ranked LP as the X axis to approximate skill. 
+
+![Annie mid WARA plot](https://images.steffnstuff.com/annie-yone-elo-curves/Annie_mid.png)
+![Yone mid WARA plot](https://images.steffnstuff.com/annie-yone-elo-curves/Yone_mid.png)
+
+To note here is that I didn't care about the exact value of the WARA at any given point. The raw winrate by rank was still subject to many factors, most notably balance. I didn't normalize for a theoretical "perfectly balanced" state because my main interest was the trend, so I tried a linear fit on these plots to capture the trend numerically.
+
+> Assumption 3: Elo curve plots are monotonic and roughly linear.
+
+Annie, as of Patch 16.6, performed significantly better as the LP of the player increased. However, using the same methodology, Yone appeared to perform significantly worse as LP increased. These results directly contradicted both assumptions 1 and 2. Either Yone and Annie were vastly different in their mastery curve (and Annie was way harder), or mastery curve would not be a strong indicator of elo curve. Between the two, it was more sensible to reconsider the former. 
+
+> Assumption 1b: Mastery curve has an unknown relationship with elo curve.
+
+I looked at a few more plots of mid laners. Malzahar had a monotonically (strictly) decreasing elo curve, Zed had a monotonically increasing elo curve, Taliyah had a low sample size, etc. Maybe I could show the general correlation between some metric for mastery curve and elo curve by plotting both. I knew Riot had some internal source for mastery curve, but during my search I didn't come across a great alternative to being a Rioter. As a proxy, I pulled Lolalytics' "Best Worldwide on Champion" Delta stat: the difference between a top player and the average joe on a specific champion. It was an imprecise metric subject to significant confounding variables, but for the sake of seeing even a flawed correlation, I tried it.
+
+![elo curve vs. mastery curve plot](https://images.steffnstuff.com/annie-yone-elo-curves/elo-curve-vs-mastery-curve.png)
+
+This looked promising at first. It showed a moderate correlation between a proxy for elo curve (WARA slope) and a proxy for mastery curve (BWC Delta). I went to check the rest of the data visually to see some more examples of elo curves.
+## A roster of outliers: Classifying League champions by elo curve
+I began a cursory flip-through of the various elo curve graphs in alphabetical order. Unfortunately, the bad news began right at the beginning with Aatrox.
+
+![aatrox elo curve plot](https://images.steffnstuff.com/annie-yone-elo-curves/Aatrox_top.png)
+
+Not very monotonic or linear at all, but at least it was roughly increasing? I hoped it was an exception, but even just in the pool of champions beginning with "A," I found a slew of completely different examples. For every Akshan, with a pleasantly linear fit, there was an Aphelios with a V-shaped dip. This data wasn't even close to being linear. In fact, I observed ~8 different visual categories that champion curves fell into:
+- Monotonic increasing: 64/215
+- Monotonic decreasing: 43/215
+- U shaped (dip in the middle, high on both sides): 19/215
+- Upside-down U shape (highest in the middle): 31/215
+- Increasing but falls down at high elo: 26/215
+- Decreasing but curves back up at high elo: 13/215
+- Relatively flat: 3/215
+- Idk man: 17/215
+
+Not even a majority were indisputably monotonic. A linear fit was effectively useless. Joining it in the trash was the assumption that I could capture an elo curve plot with a single number for the sake of comparison. As a corollary, the Elo Curve vs. Mastery Curve graph, the inquiry that I thought to write about, also made no sense at all. 
+
+> Assumption 3b: Elo curves are. 
+
+At this point, I completely abandoned the idea of being able to discuss mastery curve. Not only was the proxy I pulled inherently unreliable, but elo curves seemed to consider much more than merely mastery curve. (Eventually, I did find what I think were better mastery curve sources, but that's a story for another time.)
+
+Left with only the elo curves, I instead refocused my attention to create a moderately satisfying explanation to justify their various shapes. The main problem? Yone kept thwarting explanation, and I couldn't leave him unexplained. 
+## The Azakana in the details
+
+![WARA-overlaid-assassins-mid](https://images.steffnstuff.com/annie-yone-elo-curves/WARA-overlaid-assassins-mid.png)
+
+I overlaid Yone against a sampling of the other assassin midlaners. Among the most similar champions in his role, Yone falls significantly in comparison to the rest. In particular, he's very different even from his brother Yasuo. Yasuo's curve is somewhat U-shaped: he starts with a higher WARA, drops for a bit, appears to hit a minimum in ~Emerald, and then recovers. Yone's is monotonic, appearing to barely level out in Master+. 
+
+The two wind brothers actually served a very useful purpose for analysis. Their kits are arguably the most similar pairing in the entire game, so any champion design comparisons between the two are more precise. Both are very light fighters bordering on assassins, both use attacks for their primary damage, both build crit, and both have a three-hit Q paradigm. With so many similar elements, the remaining differences should reasonably account for the majority of meta-differences.
+
+> Assumption 4: Yone and Yasuo are very similar champions.
+
+Yasuo R is strictly conditional on knock-ups, but if you squint a little, the long cast time of Yone R also limits its self-sufficiency. Both ultimates keep people knocked up for further follow-up, both are strong but don't make up the bulk of their damage, so despite the difference in functionality, the brothers' ultimates are really more similar than they are different. A similar story follows their Es. Both serve as strong but conditional mobility. (To note: in both cases, Yone's corresponding button is less conditional and more powerful.) The biggest difference between the two champions lies in their Ws.
+
+Yasuo W, Wind Wall, is a game-defining defensive tool. The ability to completely negate projectiles for a period of time is extremely powerful, completely neutering many champions for the duration. Its impact cannot be overstated; Wind Wall reverses the melee-ranged dynamic when it's on the field, and in the hands of a skilled player, is ripe for creativity.
+
+Yone W, Spirit Cleave, is just fine in comparison. The shield it grants is quite large for a damaging ability, and its damage is target agnostic. It is not the paradigm-shifting Wind Wall—Spirit Cleave's influence over a situation simply isn't nearly as strong. In the best case, a 100-300 hp shield might block as much damage as Wind Wall while returning some damage back. In the worst case, when faced with a lethal Charm or Enchanted Crystal Arrow, Yone dies with no recourse.
+
+This stark difference in defensive optionality made me realize that Yone and Yasuo's cohort of champions was not other midlane assassins, but other attack-based light fighters. I overlaid a selection of this notably small class:
+
+![WARA-overlaid-attack-fighters](https://images.steffnstuff.com/annie-yone-elo-curves/WARA-overlaid-attack-fighters.png)
+
+With this, I finally had the standard candle that I needed.
+
+The first thing to note was that this class of champions had a local maximum in lower elos. Some of them, particularly Master Yi and Tryndamere, rose above their Bronze WARA, but all of them had a higher WARA in Bronze than in the next few ranks. The similarity I selected for these champions was their class, so the corollary was that something inherent to attack-based light fighters appears to be performant in lower skill play. 
+
+The second thing to note was that the WARA curves diverge as rank increases. Here, I did have strong points of comparison within the class. The main difference between the champions that recovered (or climbed) in high elo and the champions that continued falling was access to an unconditional, centralizing defensive tool. 
+
+> Assumption 4b: Yone, despite being wind brothers with Yasuo, has a design more closely related to Viego.
+
+Out of the "attack-based light fighter" class, Yone and Viego alone do not have consistent access to these tools. Yasuo has Wind Wall (negates any projectile), Jax has Counterstrike (negates any attack), Master Yi has Alpha Strike (negates everything briefly), and Tryndamere has ult (negates all damage for several seconds). Viego and Yone have none. Viego's passive untargetability during possession is extremely powerful, but not fully within his control. The enemy has to die before he accesses his defensive tool. Among the attack-based light fighters above, only Viego and Yone have limited defenses, and only Viego and Yone perform poorly in high elo.
+
+From the data gathered, just one defensible insight dropped out: The high elo performance of attack-heavy light fighters seems to rely upon their access to reliable, powerful defensive tools.
+## In-conclusion
+
+The core design of League that makes the game compelling—170+ unique champions—also makes larger scale design analysis difficult. There is no "generic champion"; no standard candle with known qualities to which you can compare it. Champions differ quite heavily from each other (and even from themselves by role), which can obfuscate any conclusions derived from broad comparison. If you come into League's data looking to find some earth-shattering insights, you are unlikely to leave with anything more than "in a given situation, X wins more than Y." Even a takeaway like that comes with [some amount of resistance.](https://www.youtube.com/watch?v=c1J5obgYNeo) League's data is ripe for descriptive statistics! It is extremely unfriendly to inference.
+
+Ironically, I came into this exploration with the exact attitude that League punishes heavily. I hoped that if I gestured vaguely towards theory with a sort of "proof in the margins" faith, I could find some data to support my claim about Annie. Not only did I find out that claim couldn't be addressed with this methodology, the assumptions that the claim was built on also crumbled under scrutiny. I begged the question that an elo curve was an easily modeled metric and Annie laughed me out the door.
+
+The complexity of elo curves is humbling in a way. If a champion's winrate by MMR could be easily modeled—say, linearly correlated to release date or tooltip word count—League would be a less interesting game. Instead, any overarching theory of elo curve must explain the following:
+- Annie, the simple mage of unknown difficulty with a monotonically increasing elo curve
+- Yasuo, the (likely) difficult attack-based light fighter with peaks on both extremes
+- Yone, the (likely) difficult attack-based light fighter very similar to Yasuo that is monotonically decreasing
+- Nocturne, the (maybe easy) attack-based light fighter that peaks in Emerald
+- Shen, the champion whose elo curve monotonically increases in top lane but curves downward in jungle
+- Ryze, the notoriously difficult champion that doesn't seem to change by MMR much at all
+- The rest of the roster, whose elo curve plots I've included below.
+
+You can explain each individual case with sound reasoning, but individual explanations are cheap. It's much harder to hold the same founding assumptions constant and apply them fairly in a game with so many moving parts. A rigorous, all-encompassing explanation for the factors that determine elo curve might exist. The problem is proving it. If my experience is even remotely representative, proving even a small, subclass-specific hypothesis requires some careful filtering and thinking. Make some wrong assumptions, follow some red herrings, and all you might be left with is a shitty hot take.
+
+> Assumption 2b: If you're Bronze, you should pick Yone instead of Annie.
+
+## Champion Elo Curves
+
+<ChampionProfileViewer imagePath="https://images.steffnstuff.com/wad-profiles" />
+
